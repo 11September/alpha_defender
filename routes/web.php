@@ -19,8 +19,3 @@ Route::get('/posts/{post}', 'PostsController@show');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
-
-
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
