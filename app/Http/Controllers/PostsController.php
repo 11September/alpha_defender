@@ -18,4 +18,13 @@ class PostsController extends Controller
     {
         return view('post', compact('post'));
     }
+
+    public function search(Request $request)
+    {
+        $searchQuery = $request->search;
+
+        $posts = Post::where('excerpt', 'like', "%$searchQuery%")->where('status', '=', "PUBLISHED")->paginate(10);
+
+        return view('posts', compact('posts'));
+    }
 }

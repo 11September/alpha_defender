@@ -4,3 +4,5 @@
 <script type='text/javascript' src='{{ asset('js/bootstrap.min.js') }}'></script>
 <script type='text/javascript' src='{{ asset('js/ie10-viewport-bug-workaround.js') }}'></script>
 <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+{!! NoCaptcha::renderJs() !!}
