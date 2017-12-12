@@ -1,6 +1,6 @@
 <html lang="eng">
 <head>
-    @include('partials.analytics')
+    {{--@include('partials.analytics')--}}
 
     @include('partials.head')
 
@@ -15,6 +15,8 @@
 <div class="container">
     @yield('content')
 </div>
+
+@include('partials.notice')
 
 @include('partials.footer')
 
