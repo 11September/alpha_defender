@@ -6,7 +6,6 @@
 
 @section('content')
 
-    <h1>One post page</h1>
 
 @endsection
 
