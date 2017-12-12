@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <h1>Index page</h1>
+    <h1>Posts page</h1>
 
 @endsection
 
