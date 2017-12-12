@@ -14,7 +14,10 @@
 Route::get('/', 'WelcomeController@index');
 Route::get('/posts', 'PostsController@index');
 Route::get('/posts/{post}', 'PostsController@show');
+Route::get('/search', 'PostsController@search');
 
+Route::get('/contact', 'WelcomeController@contacts');
+Route::post('/send', 'WelcomeController@sendEmail');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
