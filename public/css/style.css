@@ -40,12 +40,22 @@
 * {
     font-family: Arial Narrow;
 }
+
+.container-fluid {
+    padding-right: 0!important;
+    padding-left: 0!important;
+}
+.nopad {
+    padding: 0;
+}
 /*news section start*/
 .intro-news {
     margin-top: 67px;
 }
 .head-title {
     margin-bottom: 18px;
+    display: flex;
+    align-items: center;
 }
 .num-block {
     height: 23px;
@@ -55,30 +65,37 @@
     margin-right: 10px;
 }
 .title {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
     color: #376c63;
 }
-<<<<<<< HEAD
 .news {
     height: 256px;
     width: 100%;
     background-color: #e5e4e4;
     margin-bottom: 25px;
 }
+.news-title {
+    display: flex;
+    align-items: center;
+}
 .news-date {
-    font-size: 14px;
+    font-size: 21px;
     font-weight: 400;
     color: #376c63;
     padding-top: 14px;
+    margin: 0;
 }
 .yel-block {
     height: 80px;
     width: 17px;
     background-color: #fff720;
     float: left;
-    display: flex;
-    align-items: center;
+    margin-right: 10px;
+}
+.news-title p {
+    margin-right: 30px;
+    font-size: 18px;
 }
 .news-1 {
     height: 50%;
@@ -92,11 +109,30 @@
 .news-1-desc {
     height: 50%;
     padding: 0;
+    display: flex;
+}
+.all-news {
+    width: 140px;
+    height: 31px;
+    background-color: #ebe31b;
+    margin: 0 auto 30px;
+}
+.all-news div {
+    font-size: 14px;
+    font-weight: 600;
+    color: #195750;
+    text-align: center;
+    position: relative;
+    top: 20%;
 }
 /*news section end*/
-=======
-/*news section end*/
-
+/*poslugy section start*/
+.posluga-1 {
+    height: 382px;
+    width: 100%;
+    background-color: #1e5a50;
+}
+/*poslugy section end*/
 
 
 /* notice section */
@@ -145,4 +181,3 @@
 }
 /* footer end */
 
->>>>>>> 4e86d8ea89df435e34b12954f6cc149e67b82841
