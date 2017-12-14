@@ -10,8 +10,9 @@
     <div id="top-news">
         <div class="container">
             <div class="row">
-                <div class="num-block"></div>
-                <div class="title">НОВИНИ</div>
+                <div class="col-md-12">
+                    <h2 class="title"><span class="num-block"></span> НОВИНИ</h2>
+                </div>
 
                 <div class="col-md-12">
                     <a href="#">
@@ -27,19 +28,14 @@
                 </div>
                 <div class="col-md-10">
                     <div class="wrapper-description-post">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim, est eveniet illum
-                            libero minima numquam officia tenetur unde vero? Eius exercitationem officiis quaerat!
-                            Earum
-                            itaque modi molestias quia similique?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur facere inventore molestias nemo voluptatibus. Aspernatur assumenda dignissimos labore magnam magni maiores nemo quia? Accusamus adipisci animi beatae, dolores, error est eum excepturi expedita inventore praesentium, ullam voluptatibus. At commodi consequatur cum laboriosam maiores, nesciunt nulla, perspiciatis quam ratione repellat, totam unde. Autem exercitationem fugit maiores perferendis quasi similique. Accusantium consequuntur dolores doloribus enim eum illum inventore, libero, mollitia natus nisi perspiciatis praesentium quidem ratione recusandae reiciendis temporibus totam velit. At delectus eligendi error est eum eveniet illo, nam neque non nostrum odit optio quam quas rem reprehenderit saepe sapiente voluptatum?</p>
 
                         <div class="position-view-more-top-news">
                             <a class="view-more" href="#">Докладніше...</a>
                         </div>
                     </div>
 
-
                 </div>
-
             </div>
         </div>
     </div>
