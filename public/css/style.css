@@ -152,10 +152,6 @@
     position: relative;
     top: 20%;
 }
-<<<<<<< HEAD
-.news-pad {
-
-}
 
 .container-margin {
     margin: 0 50px;
@@ -287,8 +283,6 @@
         font-size: 23px!important;
     }
 }
-=======
->>>>>>> ab612689c568c9cd542de0aef440591f7faf0ac9
 
 /*news section end*/
 /*poslugy section start*/
@@ -421,7 +415,6 @@
     font-size: 22px;
     color: #5b5b5b;
 }
-<<<<<<< HEAD
 .resp {
     display: flex;
     align-items: center;
@@ -464,8 +457,6 @@
 
 }
 /*section about end*/
-=======
->>>>>>> ab612689c568c9cd542de0aef440591f7faf0ac9
 
 /*section about end*/
 
@@ -694,7 +685,4 @@
 .pagination {
     justify-content: center;
 }
-<<<<<<< HEAD
 /* news page end */
-=======
->>>>>>> ab612689c568c9cd542de0aef440591f7faf0ac9
