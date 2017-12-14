@@ -6,12 +6,11 @@
 
 @section('content')
 
-
     <div id="top-news">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="title"><span class="num-block"></span> НОВИНИ</h2>
+                    <h2 class="title"><a href="#"><span class="num-block"></span>НОВИНИ</a></h2>
                 </div>
 
                 <div class="col-md-12">
@@ -40,19 +39,18 @@
         </div>
     </div>
 
-
     <div id="news">
         <div class="container">
             <div class="post-item">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-xl-6 col-md-5">
                         <div class="wrapper-item-image-post">
                             <a href="#">
                                 <img src="{{ asset('images/all-news.png') }}" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-xl-6 col-md-7">
                         <div class="wrapper-item-description">
                             <h4 class="post-item-title">Lorem ipsum dolor sit amet, consectetur.</h4>
                             <p class="post-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -80,14 +78,14 @@
 
             <div class="post-item">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-xl-6 col-md-5">
                         <div class="wrapper-item-image-post">
                             <a href="#">
                                 <img src="{{ asset('images/all-news.png') }}" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-xl-6 col-md-7">
                         <div class="wrapper-item-description">
                             <h4 class="post-item-title">Lorem ipsum dolor sit amet, consectetur.</h4>
                             <p class="post-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -115,14 +113,14 @@
 
             <div class="post-item">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-xl-6 col-md-5">
                         <div class="wrapper-item-image-post">
                             <a href="#">
                                 <img src="{{ asset('images/all-news.png') }}" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-xl-6 col-md-7">
                         <div class="wrapper-item-description">
                             <h4 class="post-item-title">Lorem ipsum dolor sit amet, consectetur.</h4>
                             <p class="post-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -150,14 +148,14 @@
 
             <div class="post-item">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-xl-6 col-md-5">
                         <div class="wrapper-item-image-post">
                             <a href="#">
                                 <img src="{{ asset('images/all-news.png') }}" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-xl-6 col-md-7">
                         <div class="wrapper-item-description">
                             <h4 class="post-item-title">Lorem ipsum dolor sit amet, consectetur.</h4>
                             <p class="post-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -197,7 +195,6 @@
 
         </div>
     </div>
-
 
 @endsection
 
