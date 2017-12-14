@@ -1,7 +1,7 @@
 @font-face {
     font-family: "ArialNarrowRegular";
     src: url("../fonts/ArialNarrowRegular/ArialNarrowRegular.eot");
-    src: url("../fonts/ArialNarrowRegular/ArialNarrowRegular.eot?#iefix")format("embedded-opentype"),
+    src: url("../fonts/ArialNarrowRegular/ArialNarrowRegular.eot?#iefix") format("embedded-opentype"),
     url("../fonts/ArialNarrowRegular/ArialNarrowRegular.woff") format("woff"),
     url("../fonts/ArialNarrowRegular/ArialNarrowRegular.ttf") format("truetype");
     font-style: normal;
@@ -11,7 +11,7 @@
 @font-face {
     font-family: "ArialNarrowBold";
     src: url("../fonts/ArialNarrowBold/ArialNarrowBold.eot");
-    src: url("../fonts/ArialNarrowBold/ArialNarrowBold.eot?#iefix")format("embedded-opentype"),
+    src: url("../fonts/ArialNarrowBold/ArialNarrowBold.eot?#iefix") format("embedded-opentype"),
     url("../fonts/ArialNarrowBold/ArialNarrowBold.woff") format("woff"),
     url("../fonts/ArialNarrowBold/ArialNarrowBold.ttf") format("truetype");
     font-style: normal;
@@ -21,7 +21,7 @@
 @font-face {
     font-family: "ArialNarrowItalic";
     src: url("../fonts/ArialNarrowItalic/ArialNarrowItalic.eot");
-    src: url("../fonts/ArialNarrowItalic/ArialNarrowItalic.eot?#iefix")format("embedded-opentype"),
+    src: url("../fonts/ArialNarrowItalic/ArialNarrowItalic.eot?#iefix") format("embedded-opentype"),
     url("../fonts/ArialNarrowItalic/ArialNarrowItalic.woff") format("woff"),
     url("../fonts/ArialNarrowItalic/ArialNarrowItalic.ttf") format("truetype");
     font-style: normal;
@@ -31,35 +31,40 @@
 @font-face {
     font-family: "ArialNarrowBoldItalic";
     src: url("../fonts/ArialNarrowBoldItalic/ArialNarrowBoldItalic.eot");
-    src: url("../fonts/ArialNarrowBoldItalic/ArialNarrowBoldItalic.eot?#iefix")format("embedded-opentype"),
+    src: url("../fonts/ArialNarrowBoldItalic/ArialNarrowBoldItalic.eot?#iefix") format("embedded-opentype"),
     url("../fonts/ArialNarrowBoldItalic/ArialNarrowBoldItalic.woff") format("woff"),
     url("../fonts/ArialNarrowBoldItalic/ArialNarrowBoldItalic.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
+
 * {
     font-family: Arial Narrow;
 }
 
 /*.container-fluid {*/
-    /*padding-right: 0!important;*/
-    /*padding-left: 0!important;*/
+/*padding-right: 0!important;*/
+/*padding-left: 0!important;*/
 /*}*/
 .nopad {
     padding: 0;
 }
+
 .nomar {
     margin: 0;
 }
+
 /*news section start*/
 .intro-news {
     margin-top: 67px;
 }
+
 .head-title {
     margin-bottom: 18px;
     display: flex;
     align-items: center;
 }
+
 .num-block {
     height: 23px;
     width: 23px;
@@ -67,6 +72,7 @@
     float: left;
     margin-right: 10px;
 }
+
 .num-block-pos {
     height: 23px;
     width: 23px;
@@ -75,21 +81,25 @@
     margin-right: 10px;
     margin-left: 20px;
 }
+
 .title {
     font-size: 32px;
     font-weight: 600;
     color: #376c63;
 }
+
 .news {
     height: 256px;
     width: 100%;
     background-color: #e5e4e4;
     margin-bottom: 25px;
 }
+
 .news-title {
     display: flex;
     align-items: center;
 }
+
 .news-date {
     font-size: 21px;
     font-weight: 400;
@@ -97,6 +107,7 @@
     padding-top: 14px;
     margin: 0;
 }
+
 .yel-block {
     height: 80px;
     width: 17px;
@@ -104,15 +115,18 @@
     float: left;
     margin-right: 10px;
 }
+
 .news-title p {
     margin-right: 30px;
     font-size: 18px;
 }
+
 .news-1 {
     height: 50%;
     padding: 0;
 }
-.news-1 img{
+
+.news-1 img {
     height: 100%;
     width: 100%;
 }
@@ -122,12 +136,14 @@
     padding: 0;
     display: flex;
 }
+
 .all-news {
     width: 140px;
     height: 31px;
     background-color: #ebe31b;
     margin: 0 auto 30px;
 }
+
 .all-news div {
     font-size: 14px;
     font-weight: 600;
@@ -136,6 +152,7 @@
     position: relative;
     top: 20%;
 }
+<<<<<<< HEAD
 .news-pad {
 
 }
@@ -270,32 +287,39 @@
         font-size: 23px!important;
     }
 }
+=======
+>>>>>>> ab612689c568c9cd542de0aef440591f7faf0ac9
 
 /*news section end*/
 /*poslugy section start*/
 .incasacia .grey-font {
     color: #5b5b5b;
 }
+
 .posluga-1 {
     height: 380px;
     width: 100%;
     background-color: #1e5a50;
 }
+
 .posluga-2 {
     height: 380px;
     width: 100%;
     background-color: #ffffff;
 }
+
 .posluga-3 {
     height: 380px;
     width: 100%;
     background-color: #dcdcdc;
 }
+
 .posluga-4 {
     height: 380px;
     width: 100%;
     background-color: #ffffff;
 }
+
 .label-pos {
     height: 60px;
     width: 208px;
@@ -304,10 +328,12 @@
     align-items: center;
     margin-left: 15%;
 }
+
 .incasacia {
     margin-top: 45px;
     margin-left: 20%;
 }
+
 .incasacia-3 {
     margin-top: 45px;
     margin-left: 20%;
@@ -318,69 +344,84 @@
     font-weight: 600;
     color: #ffffff;
 }
+
 .incasacia-2 h2 {
     font-size: 26px;
     font-weight: 600;
     color: #5b5b5b;
 }
+
 .incasacia-3 h2 {
     font-size: 26px;
     font-weight: 600;
     color: #5b5b5b;
 }
+
 .incasacia li {
     color: #8dcff4;
 }
+
 .incasacia li span {
     font-size: 24px;
     line-height: 25px;
     color: #ffffff;
 }
+
 .incasacia-2 li span {
     font-size: 24px;
     line-height: 25px;
     color: #5b5b5b;
 }
+
 .incasacia-3 li span {
     font-size: 24px;
     line-height: 25px;
     color: #5b5b5b;
 }
+
 .img-fluid {
     height: 100%;
 }
+
 .img-fluid img {
     width: 100%;
     height: 100%;
 }
+
 .center {
     display: flex;
     align-items: center;
 }
-/*poslugy section end*/
 
+/*poslugy section end*/
 
 /* section about start*/
 .mar-top {
     margin-top: 60px;
 }
+
 .about {
     padding-top: 60px;
     background-color: #dcdcdc;
 }
+
 .about-img-1 img {
     width: 100%;
 }
+
 .about-img-2 img {
     width: 100%;
 }
+
 .about-intro {
     margin-bottom: 90px;
 }
+
 .about-intro p {
     font-size: 22px;
     color: #5b5b5b;
 }
+<<<<<<< HEAD
 .resp {
     display: flex;
     align-items: center;
@@ -423,47 +464,53 @@
 
 }
 /*section about end*/
+=======
+>>>>>>> ab612689c568c9cd542de0aef440591f7faf0ac9
 
+/*section about end*/
 
 /* notice section */
-.notice-wrapper{
+.notice-wrapper {
     margin: 0;
-    width:100%;
-    height:120px;
+    width: 100%;
+    height: 120px;
     background-color: #fff720;
     justify-content: center;
 }
-.notice{
+
+.notice {
     align-self: center;
 }
-.notice-text{
+
+.notice-text {
     font-size: 18px;
     font-weight: bold;
     color: #195750;
 }
+
 /* notice section end */
 
 /* footer */
-.footer{
+.footer {
     /*height:250px;*/
 }
 
-.footer-background{
+.footer-background {
     background-image: url("../images/footer-background.png");
     background-color: #cccccc;
 
 }
 
-.footer-wrapper{
-    height:214px;
+.footer-wrapper {
+    height: 214px;
 }
 
-.footer-image{
-    width:180px;
+.footer-image {
+    width: 180px;
     padding: 30px 0;
 }
 
-.wrrapper-description{
+.wrrapper-description {
     height: 100%;
     width: 100%;
     display: flex;
@@ -471,67 +518,68 @@
     flex-direction: row
 }
 
-.footer-description-text{
+.footer-description-text {
     align-self: center;
     font-size: 18px;
     color: #ffffff;
 }
 
-.social-wrapper{
+.social-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height:100%;
+    height: 100%;
 }
 
-.social-block{
+.social-block {
     align-self: center;
 }
 
-.list-inline{
+.list-inline {
     margin: 0;
 }
 
-.list-inline-item{
+.list-inline-item {
     margin: 0 !important;
     padding: 0 !important;
-    width:55px;
+    width: 55px;
     height: 55px;
 }
 
-.list-inline-item:nth-child(2n){
+.list-inline-item:nth-child(2n) {
     background-color: #5d5d5d;
 }
 
-.list-inline-item:nth-child(2n -1 ){
+.list-inline-item:nth-child(2n -1 ) {
     background-color: #717271;
 }
 
-.list-inline-item:hover{
+.list-inline-item:hover {
     background-color: #fff720;
 }
 
-.list-inline-item a i:hover{
+.list-inline-item a i:hover {
     color: #717271;
 }
 
-.list-inline-item a{
-    width:55px;
-    height:55px;
+.list-inline-item a {
+    width: 55px;
+    height: 55px;
 }
 
-.list-inline-item a i{
+.list-inline-item a i {
     color: #525151;
     padding: 12px;
 }
 
-.copyright{
-    height:45px;
+.copyright {
+    height: 45px;
     background-color: #333232;
     justify-content: center;
     margin: 0;
 }
-.copyright-text{
+
+.copyright-text {
     align-self: center;
     margin: 0;
     padding: 0;
@@ -540,101 +588,113 @@
 }
 
 @media screen and (max-width: 991px) {
-    .footer-description-text{
+    .footer-description-text {
         font-size: 16px;
         padding: 20px;
     }
 
-    .footer-image{
+    .footer-image {
         display: flex;
         margin: 0 auto;
     }
 }
+
 /* footer end */
 
-
-
 /* news page */
-#top-news{
-    height:600px;
+#top-news {
+
 }
 
-#top-news .container{
+#top-news .container {
     /*margin: 0 ;*/
 }
 
-.main-news-image{
-    width:100%;
+.main-news-image {
+    width: 100%;
     height: 330px;
 }
 
-.wrapper-description-post{
+.wrapper-description-post {
     position: relative;
 }
 
-.position-view-more-top-news{
-    position: absolute;
-    bottom: -40px;
-    right: 0;
+.wrapper-description-post p{
+    padding-right: 55px;
 }
 
-.wrapper-top-news-text{
+.position-view-more-top-news {
+    position: absolute;
+    bottom: -40px;
+    right: 55px;
+}
+
+.wrapper-top-news-text {
     padding: 35px 0;
 }
 
-#news{
+#news {
     padding: 10px 0;
     background-color: #dcdcdc;
 }
 
-.post-item{
-    width:100%;
+.post-item {
+    width: 100%;
     margin: 50px 0;
 }
 
-.wrapper-item-image-post{
+.wrapper-item-image-post {
 
 }
 
-.post-date , .view-more{
+.title span {
+    margin-top: 8px;
+}
+
+#top-news .title {
+    margin: 80px 0 40px 0;
+}
+
+.post-date, .view-more {
     font-size: 20px;
     color: #21564e;
 }
 
-.view-more:hover{
+.view-more:hover {
     text-decoration: none;
     color: #2b857d;
 }
 
-.wrapper-post-additional{
+.wrapper-post-additional {
     width: 100%;
 }
 
-.location-additional-date-block{
+.location-additional-date-block {
     float: left;
 }
 
-.location-additional-view-more{
+.location-additional-view-more {
     float: right;
 
 }
 
-
-
-.wrapper-item-description{
+.wrapper-item-description {
     padding: 15px 50px;
 }
 
-.post-item-title{
-    width:100%;
+.post-item-title {
+    width: 100%;
     margin: 0 0 20px;
 }
 
-.location-additional-date-block{
+.location-additional-date-block {
 
 }
 
-.pagination{
+.pagination {
     justify-content: center;
 }
+<<<<<<< HEAD
 /* news page end */
+=======
+>>>>>>> ab612689c568c9cd542de0aef440591f7faf0ac9
