@@ -404,6 +404,9 @@
     font-size: 17px;
     color: #555454;
 }
+<<<<<<< HEAD
+/* footer end */
+=======
 
 @media screen and (max-width: 991px) {
     .footer-description-text {
@@ -514,3 +517,4 @@
 }
 
 /* news page end */
+>>>>>>> 087f8d4bd1d700c2608a8fbbc209138428ed637e

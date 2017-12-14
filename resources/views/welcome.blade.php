@@ -16,7 +16,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <div class="news">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 news-1">
-                            <img src="../images/default.png" alt="">
+                            <img src="../images/news1.png" alt="">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 news-1-desc">
                             <div class="news-title">
@@ -32,7 +32,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <div class="news">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 news-1">
-                            <img src="../images/default.png" alt="">
+                            <img src="../images/news2.png" alt="">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 news-1-desc">
                             <div class="news-title">
@@ -48,7 +48,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <div class="news">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 news-1">
-                            <img src="../images/default.png" alt="">
+                            <img src="../images/news3.png" alt="">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 news-1-desc">
                             <div class="news-title">
@@ -90,14 +90,14 @@
                     </div>
                     <div class="col-xs-7 col-sm-7 col-md-7 col-lg-6 nopad">
                         <div class="img-fluid">
-                            <img src="../images/default.png" alt="">
+                            <img src="../images/services.png" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="posluga-2 row nomar">
                     <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 nopad">
                         <div class="img-fluid">
-                            <img src="../images/default.png" alt="">
+                            <img src="../images/incasation.png" alt="">
                         </div>
                     </div>
                     <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 center">
@@ -130,14 +130,14 @@
                     </div>
                     <div class="col-xs-7 col-sm-7 col-md-7 col-lg-6 nopad">
                         <div class="img-fluid">
-                            <img src="../images/default.png" alt="">
+                            <img src="../images/terminal.png" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="posluga-4 row nomar">
                     <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 nopad">
                         <div class="img-fluid">
-                            <img src="../images/default.png" alt="">
+                            <img src="../images/defence.png" alt="">
                         </div>
                     </div>
                     <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 center">
@@ -172,13 +172,13 @@
                     </div>
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                         <div class="about-img-1">
-                            <img src="../images/default.png" alt="">
+                            <img src="../images/ammo.png" alt="">
                         </div>
                     </div>
 
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                         <div class="about-img-2">
-                            <img src="../images/default.png" alt="">
+                            <img src="../images/t5.png" alt="">
                         </div>
                     </div>
                     <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
