@@ -2,10 +2,10 @@
     <div class="footer-background">
         <div class="container">
             <div class="row footer-wrapper">
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-6 col-6">
                     <img class="footer-image" src="{{ asset('images/LOGO_small.png') }}" alt="">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6 col-6">
                     <div class="wrrapper-description">
                         <p class="footer-description-text">
                             Замовити нас Ви можете день в день, та у вихідні дні, <br>
@@ -14,7 +14,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-12 text-center">
                     <div class="social-wrapper">
                         <div class="social-block">
                             <ul class="list-inline">
@@ -45,6 +45,8 @@
             </div>
         </div>
     </div>
+
+    <div class="clearfix"></div>
 
     <div class="row copyright">
         <p class="copyright-text">АльфаЗахист &#9400; 2017</p>
