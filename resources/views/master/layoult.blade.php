@@ -10,9 +10,9 @@
 </head>
 <body>
 
-@include('partials.nav')
+{{--@include('partials.nav')--}}
 
-<div class="container-fluid">
+<div>
     @yield('content')
 </div>
 
