@@ -7,13 +7,13 @@
 @section('content')
 
     <section class="intro-news">
-        <div class="container">
+        <div class="container-fluid container-margin">
             <div class="head-title">
                 <div class="num-block"></div>
                 <div class="title">НОВИНИ</div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 news-pad">
                     <div class="news">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 news-1">
                             <img src="../images/news1.png" alt="">
@@ -29,7 +29,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 news-pad">
                     <div class="news">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 news-1">
                             <img src="../images/news2.png" alt="">
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 news-pad">
                     <div class="news">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 news-1">
                             <img src="../images/news3.png" alt="">
@@ -68,7 +68,7 @@
         </div>
     </section>
     <section class="poslugy">
-        <div class="container-fluid">
+        <div class="container-fluid nopad">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nopad">
                 <div class="posluga-1 row nomar">
                     <div class="col-xs-5 col-sm-5 col-md-5 col-lg-6">
@@ -158,9 +158,8 @@
         </div>
     </section>
     <section class="about">
-        <div class="container">
+        <div class="container-fluid container-margin">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row nopad">
-
                     <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
                         <div class="head-title">
                             <div class="num-block"></div>
@@ -170,13 +169,13 @@
                             <p>Обслуговуючий персонал Департаменту інкасації представлений висококваліфікованими  працівниками, які пройшли спеціальну підготовку в навчальних закладах Національного Банку України та мають багаторічний досвід роботи з інкасації коштів та перевезення валютних цінностей.</p>
                         </div>
                     </div>
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 resp nopad">
                         <div class="about-img-1">
                             <img src="../images/ammo.png" alt="">
                         </div>
                     </div>
 
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 resp nopad">
                         <div class="about-img-2">
                             <img src="../images/t5.png" alt="">
                         </div>

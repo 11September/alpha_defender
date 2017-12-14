@@ -136,6 +136,141 @@
     position: relative;
     top: 20%;
 }
+.news-pad {
+
+}
+
+.container-margin {
+    margin: 0 50px;
+}
+@media screen and (max-width: 991px) {
+    .news-title p{
+        margin-right: 10px;
+        font-size: 17px;
+    }
+    .news-date{
+        font-size: 19px;
+        padding-top: 14px;
+        margin: 0;
+    }
+    .incasacia h2 {
+        font-size: 23px!important;
+    }
+    .incasacia-2 h2 {
+        font-size: 23px!important;
+    }
+    .incasacia-3 h2 {
+        font-size: 23px!important;
+    }
+    .incasacia li span {
+        font-size: 20px!important;
+    }
+    .incasacia-2 li span {
+        font-size: 20px!important;
+    }
+    .incasacia-3 li span {
+        font-size: 20px!important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .news-title p{
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .news-date{
+        font-size: 18px;
+        font-weight: 400;
+        color: #376c63;
+        padding-top: 20px;
+        margin: 0;
+    }
+    .container-margin {
+        margin: 0;
+    }
+    .news-pad {
+        padding: 0px 10px;
+    }
+    .incasacia h2 {
+        font-size: 21px!important;
+    }
+    .incasacia-2 h2 {
+        font-size: 21px!important;
+    }
+    .incasacia-3 h2 {
+        font-size: 21px!important;
+    }
+    .incasacia li span {
+        font-size: 18px!important;
+    }
+    .incasacia-2 li span {
+        font-size: 18px!important;
+    }
+    .incasacia-3 li span {
+        font-size: 18px!important;
+        line-height: 20px;
+        color: #5b5b5b;
+    }
+    .incasacia {
+        margin-top: 10px!important;
+        margin-left: 15% !important;
+    }
+    .incasacia-3 {
+        margin-top: 10px!important;
+        margin-left: 15% !important;
+    }
+    .label-pos {
+        margin-left: 0% !important;
+    }
+}
+@media screen and (max-width: 414px) {
+    .img-fluid {
+        display: none;
+    }
+    .incasacia {
+        margin-top: 40px!important;
+        margin-left: 0!important;
+    }
+    .incasacia-3 {
+        margin-top: 50px!important;
+        margin-left: 0!important;
+    }
+    .incasacia ul {
+        margin-left: -20px;
+        text-align: center;
+    }
+    .incasacia-2 {
+        margin-top: -185px;
+    }
+    .incasacia-2 ul {
+        margin-left: -20px;
+        text-align: center;
+    }
+    .incasacia h2 {
+        font-size: 25px!important;
+        text-align: center;
+    }
+    .incasacia-2 h2 {
+        font-size: 25px!important;
+        text-align: center;
+    }
+    .incasacia-3 h2 {
+        font-size: 25px!important;
+        text-align: center;
+    }
+    .incasacia-3 ul {
+        text-align: center;
+    }
+    .incasacia li span {
+        font-size: 23px!important;
+    }
+    .incasacia-2 li span {
+        font-size: 23px!important;
+    }
+    .incasacia-3 li span {
+        font-size: 23px!important;
+    }
+}
+
 /*news section end*/
 /*poslugy section start*/
 .incasacia .grey-font {
@@ -245,6 +380,47 @@
 .about-intro p {
     font-size: 22px;
     color: #5b5b5b;
+}
+.resp {
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 991px) {
+    .about-intro {
+        margin-bottom: 60px;
+    }
+    .about-intro p {
+        font-size: 20px;
+        color: #5b5b5b;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .about-intro {
+        margin-bottom: 50px;
+    }
+    .about-intro p {
+        font-size: 18px;
+        color: #5b5b5b;
+    }
+
+}
+@media screen and (max-width: 441px) {
+    .about {
+        padding-top: 40px;
+    }
+    .about-img-1 {
+        display: none;
+    }
+    .about-intro {
+        margin-bottom: 10px;
+    }
+    .about-intro p {
+        font-size: 23px;
+        text-align: center;
+        color: #5b5b5b;
+    }
+
 }
 /*section about end*/
 
@@ -362,9 +538,6 @@
     font-size: 17px;
     color: #555454;
 }
-<<<<<<< HEAD
-/* footer end */
-=======
 
 @media screen and (max-width: 991px) {
     .footer-description-text{
@@ -465,4 +638,3 @@
     justify-content: center;
 }
 /* news page end */
->>>>>>> 087f8d4bd1d700c2608a8fbbc209138428ed637e
