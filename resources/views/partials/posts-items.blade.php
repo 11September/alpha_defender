@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-xl-6 col-md-5">
                 <div class="wrapper-item-image-post">
-                    <a href="#">
+                    <a href="{{ action('PostsController@show', $post->id) }}">
                         <img class="image-post" src="{{ asset('storage/' . $post->image) }}" alt="">
                     </a>
                 </div>
