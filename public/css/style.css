@@ -209,6 +209,95 @@ a {
     .incasacia-3 li span {
         font-size: 20px !important;
     }
+
+    .mobi-icons {
+        display: block!important;
+    }
+
+    .tablet-none{
+        display: none!important;
+    }
+
+    .menu-list{
+        flex-direction: column;
+        order: 1;
+    }
+
+    .main-navigation{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .socials-search{
+        order: 2;
+    }
+
+    .menu-list .menu-list__item:nth-child(1){
+        order: 2;
+    }
+
+    .menu-list .menu-list__item:nth-child(2){
+        order: 3; 
+    }
+
+    .menu-list .menu-list__item:nth-child(3){
+        order: 1;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .menu-list .menu-list__item:nth-child(4){
+        order: 4;
+    }
+
+    .menu-list .menu-list__item:nth-child(5){
+        order: 5;
+    }
+
+        .menu-list .menu-list__item:nth-child(6){
+        order: 6;
+    }
+
+        .menu-list .menu-list__item:nth-child(7){
+        order: 7;
+    }
+
+        .menu-list .menu-list__item:nth-child(8){
+        order: 8;
+    }
+
+        .menu-list .menu-list__item:nth-child(9){
+        order: 9;
+    }
+
+    .menu-list .menu-list__item a{
+        width: 100%!important;
+        font-size: 16px!important;
+        padding: 5px 30px!important;
+    }
+
+    .menu-list .logo img{
+        width: 80%;
+        height: 150px;
+        position: static!important;
+    }
+
+    .bottom-menu{
+        order: 4;
+    }
+
+    .socials-search {
+        padding-top: 0px!important;
+    }
+
+    .socials-search:before {
+        height: 0!important;
+    }
+
+    .search-body{
+        margin-top: 15px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -271,6 +360,18 @@ a {
 
     .label-pos {
         margin-left: 0% !important;
+    }
+
+    .socials-search{
+        flex-direction: column!important;
+    }
+
+    .socials-icons,.search-body{
+        padding: 0!important;
+    }
+
+    .yellow-line p {
+        font-size: 14px!important;
     }
 }
 
@@ -1442,4 +1543,72 @@ textarea, input {
 
 #page{
     margin: 50px;
+}
+
+.header-ico {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+}
+
+.mobi-icons{
+    display: none; 
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+.header-ico {
+    width: 50px;
+    height: 30px;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+}
+
+.ico-bg {
+    width: 250px;
+    height: 150px;
+}
+
+.ico-one {
+    margin: 50px 30px;
+    width: 35px;
+    height: 35px;
+}
+.ico-two {
+    margin: 55px 30px;
+    width: 35px;
+    height: 35px;
+}
+
+.hider {
+    display: none;
+}
+
+.hiden {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    right: 0;
+    background: #256056;
+    z-index: 4;
+    top: 0;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.menu .main-navigation{
+    background-image: none;
+}
+
+.fone-hide{
+    display: none;
 }

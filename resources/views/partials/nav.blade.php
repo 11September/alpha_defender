@@ -1,4 +1,4 @@
-<nav class="main-navigation" id="toper">
+<nav class="main-navigation tablet-none" id="toper">
     <div class="green-line"></div>
 
     <div class="yellow-line">
@@ -46,6 +46,57 @@
     </ul>
 </nav>
 
+    <div class="menu hiden">
+        <nav class="main-navigation" id="toper">
+
+            <div class="yellow-line">
+                <p>ТОВ «ОК»АЛЬФА-ЗАХИСТ» пропонує  скористатися  послугами з інкасації коштів та перевезення валютних цінностей у зручний для Вас час.</p>
+            </div>
+
+            <div class="socials-search">
+                <div class="socials-icons">
+                <a href="" class="social-item odd"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                <a href="" class="social-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="" class="social-item odd"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="" class="social-item"><i class="fa fa-rss" aria-hidden="true"></i></a>
+                </div>
+                <div class="search-body">
+                <span class="search-field">
+                    <form action="">
+                        <input type="text" placeholder="Знайти...">
+                    </form>
+                    <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                </span>
+                </div>
+            </div>
+
+            <ul class="menu-list">
+            <li class="menu-list__item {{ Request::is('page-about') ? 'active' : '' }}">
+                <a class="{{ Request::is('page-about') ? 'active' : '' }}" href="{{ url('page-about') }}">ПРО НАС</a>
+            </li>
+            <li class="menu-list__item {{ Request::is('posts') ? 'active' : '' }}">
+                <a class="{{ Request::is('posts') ? 'active' : '' }}" href="{{ url('posts') }}">НОВИНИ</a>
+            </li>
+            <li class="logo menu-list__item">
+                <img src="{{ asset('images/logo.png') }}" alt="">
+            </li>
+            <li class="menu-list__item third {{ Request::is('contacts') ? 'active' : '' }}">
+                <a class="{{ Request::is('contacts') ? 'active' : '' }}" href="{{ url('contacts') }}">КОНТАКТИ</a>
+            </li>
+            <li class="menu-list__item third"><a data-toggle="modal" data-target="#myModal" href="#reviews">ЗАМОВИТИ ЗАРАЗ</a></li>
+            <li class="menu-list__item"><a href="">ІНКАСАЦІЯ ЮРИДИЧНИХ ОСІБ</a></li>
+            <li class="menu-list__item"><a href="">ІНКАСАЦІЯ ФІЗИЧНИХ ОСІБ</a></li>
+            <li class="menu-list__item"><a href="">ІНКАСАЦІЯ БАНКІВ</a></li>
+            <li class="menu-list__item"><a href="">ОХОРОННА ДІЯЛЬНІСТЬ</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="mobi-icons">
+        <img class="header-ico ico-bg" src="images/mobi-fone.png" alt="">
+        <img class="header-ico ico-one" src="images/menu-ico.png" alt="">
+        <img class="header-ico ico-two hider" src="images/menu-ico-OPEN.png" alt="">
+    </div>
 
 
 <!-- Modal -->
