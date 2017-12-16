@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Post;
+use App\Person;
 use Illuminate\Http\Request;
 
 class WelcomeController extends Controller
@@ -16,7 +17,9 @@ class WelcomeController extends Controller
 
     public function contacts()
     {
-        return view('contact');
+        $persons = Person::orderBy('name', 'desc')->get();
+
+        return view('contact', compact('persons'));
     }
 
     public function sendEmail(Request $request)

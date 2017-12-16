@@ -16,92 +16,22 @@
             </div>
 
             <div class="row wrapper-main-contact-block">
-                <div class="col-md-6 col-xl-4">
-                    <div class="wrapper-contact-item">
-                        <div class="wrapper-image-contacts">
-                            <img class="avatar" src="{{ asset('images/users.png') }}" alt="">
-                        </div>
-                        <div class="wrapper-contact-info">
-                            <p class="position">Lorem ipsum dolor sit amet, consectetur Aliquid, ipsa.</p>
-                            <p class="email"><a href="mailto:boss@gmail.com?Subject=Hello%20again" target="_top">boss@gmail.com</a>
-                            </p>
-                            <p class="phone"><a href="tel:+38 (000) 000-00-00">+38 (000) 000-00-00</a></p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-md-6 col-xl-4">
-                    <div class="wrapper-contact-item">
-                        <div class="wrapper-image-contacts">
-                            <img class="avatar" src="{{ asset('images/users.png') }}" alt="">
-                        </div>
-                        <div class="wrapper-contact-info">
-                            <p class="position">Lorem elit. Aliquid, ipsa.</p>
-                            <p class="email"><a href="mailto:boss@gmail.com?Subject=Hello%20again" target="_top">boss@gmail.com</a>
-                            </p>
-                            <p class="phone"><a href="tel:+38 (000) 000-00-00">+38 (000) 000-00-00</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="wrapper-contact-item">
-                        <div class="wrapper-image-contacts">
-                            <img class="avatar" src="{{ asset('images/users.png') }}" alt="">
-                        </div>
-                        <div class="wrapper-contact-info">
-                            <p class="position">Lorem ipsum.</p>
-                            <p class="email"><a href="mailto:boss@gmail.com?Subject=Hello%20again" target="_top">boss@gmail.com</a>
-                            </p>
-                            <p class="phone"><a href="tel:+38 (000) 000-00-00">+38 (000) 000-00-00</a></p>
+                @foreach($persons as $person)
+                    <div class="col-md-6 col-xl-4">
+                        <div class="wrapper-contact-item">
+                            <div class="wrapper-image-contacts">
+                                <img class="avatar" src="{{ asset('storage/' . $person->image) }}" alt="{{ $person->name }}">
+                            </div>
+                            <div class="wrapper-contact-info">
+                                <p class="position">{{ $person->position }}</p>
+                                <p class="email"><a href="mailto:{{ $person->email }}?Subject=Hello%20again" target="_top">{{ $person->email }}</a>
+                                </p>
+                                <p class="phone"><a href="tel:{{ $person->phone }}">{{ $person->phone }}</a></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="wrapper-contact-item">
-                        <div class="wrapper-image-contacts">
-                            <img class="avatar" src="{{ asset('images/users.png') }}" alt="">
-                        </div>
-                        <div class="wrapper-contact-info">
-                            <p class="position">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
-                                ipsa.</p>
-                            <p class="email"><a href="mailto:boss@gmail.com?Subject=Hello%20again" target="_top">boss@gmail.com</a>
-                            </p>
-                            <p class="phone"><a href="tel:+38 (000) 000-00-00">+38 (000) 000-00-00</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="wrapper-contact-item">
-                        <div class="wrapper-image-contacts">
-                            <img class="avatar" src="{{ asset('images/users.png') }}" alt="">
-                        </div>
-                        <div class="wrapper-contact-info">
-                            <p class="position">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
-                                ipsa.</p>
-                            <p class="email"><a href="mailto:boss@gmail.com?Subject=Hello%20again" target="_top">boss@gmail.com</a>
-                            </p>
-                            <p class="phone"><a href="tel:+38 (000) 000-00-00">+38 (000) 000-00-00</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="wrapper-contact-item">
-                        <div class="wrapper-image-contacts">
-                            <img class="avatar" src="{{ asset('images/users.png') }}" alt="">
-                        </div>
-                        <div class="wrapper-contact-info">
-                            <p class="position">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
-                                ipsa.</p>
-                            <p class="email"><a href="mailto:boss@gmail.com?Subject=Hello%20again" target="_top">boss@gmail.com</a>
-                            </p>
-                            <p class="phone"><a href="tel:+38 (000) 000-00-00">+38 (000) 000-00-00</a></p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
 
                 <div class="row">
                     <div class="col-md-12">
