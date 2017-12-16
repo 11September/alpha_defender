@@ -18,7 +18,7 @@
                             {{ $post->excerpt }}
                         @else
                             @php
-                                $body = strip_tags($featured->body); $body = substr($body,0,700);
+                                $body = strip_tags($post->body); $body = substr($body,0,700);
                             @endphp
                             {{ $body . " ..." }}
                         @endif

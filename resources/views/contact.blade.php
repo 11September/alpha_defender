@@ -115,7 +115,8 @@
     </div>
 
     <div id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10070.07390541555!2d34.77503999999999!3d50.87711365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1513384254389"   height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10070.07390541555!2d34.77503999999999!3d50.87711365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1513384254389"
+                height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
     <div id="form">
@@ -161,9 +162,9 @@
                             <li class="contact-list">Також пишіть сюди у випадку, коли ви бажаете більш детальніше
                                 дізнатися про наші послуги.
                             </li>
-                            <li class="contact-list">Для замовлення послуги скористайтеся функцією <a class="order-now"
-                                                                                                      href="#">“ЗАМОВИТИ
-                                    ЗАРАЗ”</a></li>
+                            <li class="contact-list">Для замовлення послуги скористайтеся функцією
+                                <a class="order-now" data-toggle="modal" data-target="#myModal" href="#reviews">“ЗАМОВИТИ ЗАРАЗ”</a>
+                            </li>
                         </ul>
                     </div>
 

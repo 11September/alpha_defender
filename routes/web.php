@@ -14,7 +14,7 @@
 Route::get('/', 'WelcomeController@index');
 Route::get('/posts', 'PostsController@index');
 Route::get('/posts/{post}', 'PostsController@show');
-Route::get('/search', 'PostsController@search');
+Route::post('/search', 'PostsController@search');
 
 Route::get('/contacts', 'WelcomeController@contacts');
 Route::post('/send', 'WelcomeController@sendEmail');

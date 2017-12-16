@@ -696,6 +696,7 @@ a {
 }
 
 #news {
+    margin-top: -16px !important;
     padding: 10px 0;
     background-color: #dcdcdc;
 }
@@ -857,7 +858,8 @@ a {
     background-color: #dcdcdc;
     background-image: url(../images/LOGO_small.png);
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center;
+    background-size: 400px;
 }
 
 .wrapper-contact-item {
@@ -913,6 +915,23 @@ a {
 #contact-form {
     padding-right: 10%;
     margin: 0;
+}
+
+.wrapper-search-form{
+    margin: 50px 0;
+    text-align: center;
+}
+
+#search-form .form-group {
+    margin: 10px 0;
+    height: 66px;
+}
+
+#search-form input {
+    padding: 20px 10px 20px 20px;
+    line-height: 20px;
+    border-radius: 0;
+    width: 40%;
 }
 
 .form-with-line {

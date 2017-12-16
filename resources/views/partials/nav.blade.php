@@ -14,10 +14,11 @@
         </div>
         <div class="search-body">
             <span class="search-field">
-                <form action="">
-                    <input type="text" placeholder="Знайти...">
+                <form method="post" action="{{ action('PostsController@search') }}">
+                     {{ csrf_field() }}
+                    <input name="search" type="text" placeholder="Знайти...">
                 </form>
-                <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                <a type="submit" href=""><i class="fa fa-search" aria-hidden="true"></i></a>
             </span>
         </div>
     </div>

@@ -29,8 +29,11 @@ class PostsController extends Controller
     {
         $searchQuery = $request->search;
 
-        $posts = Post::where('excerpt', 'like', "%$searchQuery%")->where('status', '=', "PUBLISHED")->paginate(10);
+        $posts = Post::where('excerpt', 'like', "%$searchQuery%")
+            ->orWhere('title', 'like' , "%$searchQuery%")
+            ->orWhere('body', 'like' , "$searchQuery%")
+            ->where('status', '=', "PUBLISHED")->paginate(10);
 
-        return view('posts', compact('posts'));
+        return view('search', compact('posts'));
     }
 }
