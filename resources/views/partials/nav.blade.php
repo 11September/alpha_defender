@@ -17,8 +17,9 @@
                 <form method="post" action="{{ action('PostsController@search') }}">
                      {{ csrf_field() }}
                     <input name="search" type="text" placeholder="Знайти...">
+                    <button class="search-btn" type="submit" href=""><i class="fa fa-search" aria-hidden="true"></i></button>
                 </form>
-                <a type="submit" href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                
             </span>
         </div>
     </div>
@@ -43,7 +44,7 @@
         <li><a class="{{ Request::is('page-inkasaciya-yuridichnih-osib') ? 'active' : '' }}" href="{{ url('page-inkasaciya-yuridichnih-osib') }}">ІНКАСАЦІЯ ЮРИДИЧНИХ ОСІБ</a></li>
         <li><a class="{{ Request::is('page-inkasaciya-fizichnih-osib') ? 'active' : '' }}" href="{{ url('page-inkasaciya-fizichnih-osib') }}">ІНКАСАЦІЯ ФІЗИЧНИХ ОСІБ</a></li>
         <li><a class="{{ Request::is('page-inkasaciya-bankiv') ? 'active' : '' }}" href="{{ url('page-inkasaciya-bankiv') }}">ІНКАСАЦІЯ БАНКІВ</a></li>
-        <li><a class="{{ Request::is('page-ohoronna-diyal-nist') ? 'active' : '' }}" href="{{ url('page-ohoronna-diyal-nist') }}">ОХОРОННА ДІЯЛЬНІСТЬ</a></li>
+        <li class="last"><a class="{{ Request::is('page-ohoronna-diyal-nist') ? 'active' : '' }}" href="{{ url('page-ohoronna-diyal-nist') }}">ОХОРОННА ДІЯЛЬНІСТЬ</a></li>
     </ul>
 </nav>
 
@@ -115,13 +116,14 @@
                 </div>
                 <div class="middle-part">
                     <h3>Або</h3>
+                    <div class="vertical-line"></div>
                 </div>
                 <div class="right-part">
                     <h3>ЗАЛИШТЕ ПОВІДОМЛЕННЯ</h3>
                     <form action="">
                         <input type="text" placeholder="Як до вас звертатися?">
                         <input type="text" placeholder="Номер телефону, або e-mail  для зворотнього зв’язку ...">
-                        <textarea placeholder="Текст повідомлення  ..."></textarea>
+                        <textarea rows="5" placeholder="Текст повідомлення  ..."></textarea>
                         <input type="submit" value="Відправити" class="btn-submit">
                     </form>
                 </div>

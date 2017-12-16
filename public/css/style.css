@@ -298,6 +298,11 @@ a {
         margin-top: 15px;
     }
 
+    .text-center {
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -373,6 +378,27 @@ a {
     .yellow-line p {
         font-size: 14px!important;
     }
+
+    .social-wrapper {
+        height: auto!important;
+        margin-bottom: 20px!important;
+    }
+
+    .footer-wrapper {
+        height: auto!important;
+    }
+
+    .wrrapper-description {
+         height: auto!important; 
+    }
+
+    .text-center {
+        padding: 0;
+    }
+
+    .middle-part {
+        visibility: hidden;
+    }
 }
 
 @media screen and (max-width: 414px) {
@@ -433,6 +459,18 @@ a {
 
     .incasacia-3 li span {
         font-size: 23px !important;
+    }
+
+    .modal-body span {
+        width: 100%!important;
+    }
+
+    .first-span:before{
+    display: none;
+    }
+
+.second-span:before{
+    display: none;
     }
 }
 
@@ -1188,6 +1226,8 @@ textarea, input {
     color: white;
     background: #1E5A50;
     padding-left: 0;
+    background-image: url(../images/texture.png);
+    background-size: auto 100%;
 }
 
 .menu-list .menu-list__item {
@@ -1347,10 +1387,10 @@ textarea, input {
     background-size: 100% 100%;
 }
 
-.search-field::-webkit-input-placeholder {color:white;}
-.search-field::-moz-placeholder          {color:white;}/* Firefox 19+ */
-.search-field:-moz-placeholder           {color:white;}/* Firefox 18- */
-.search-field:-ms-input-placeholder      {color:white;}
+.search-field input::-webkit-input-placeholder {color:white;}
+.search-field input::-moz-placeholder          {color:white;}/* Firefox 19+ */
+.search-field input:-moz-placeholder           {color:white;}/* Firefox 18- */
+.search-field input:-ms-input-placeholder      {color:white;}
 
 .bottom-menu{
     display: flex;
@@ -1359,6 +1399,7 @@ textarea, input {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 80px;
+    box-shadow: -8px 22px 64px -11px rgba(0,0,0,1);
 }
 
 .bottom-menu li a{
@@ -1374,8 +1415,12 @@ textarea, input {
 }
 
 .bottom-menu li a:hover,
-.bottom-menu li a:visited{
+.bottom-menu li a:visited,{
     text-decoration: none;
+}
+
+a:focus, a:hover {
+    text-decoration: none!important;
 }
 
 .bottom-menu li{
@@ -1385,7 +1430,7 @@ textarea, input {
 .socials-search:before{
     content: '';
     position: absolute;
-    width: 100%;
+    width: 76%;
     height: 5px;
     background: yellow;
 }
@@ -1429,6 +1474,11 @@ textarea, input {
         top: 90px;
     }
 
+
+    .text-center {
+        padding: 0;
+    }
+
 }
 
 
@@ -1456,6 +1506,18 @@ textarea, input {
     .middle-part h3{
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    .middle-part {
+        visibility: visible;
+    }
+
+    .vertical-line{
+        display: none;
+    }
+
+    .right-part h3 {
+         padding-left: 0!important; 
     }
 }
 
@@ -1486,6 +1548,9 @@ textarea, input {
 .middle-part{
     width: 10%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .modal-body h3{
@@ -1520,12 +1585,14 @@ textarea, input {
 
 .right-part h3{
     margin-bottom: 40px;
+    padding-left: 50px;
 }
 
 .left-part p{
     font-size: 16px;
     padding-bottom: 0;
     margin-bottom: 0;
+    color: 777474;
 }
 
 .modal-body input,.modal-body textarea{
@@ -1562,6 +1629,7 @@ textarea, input {
     background-image: url(http://localhost:8000/images/siluet.png);
     background-repeat: no-repeat;
     background-size: 20% 100%;
+    background-position: 15%;
 }
 
 #page{
@@ -1634,4 +1702,52 @@ textarea, input {
 
 .fone-hide{
     display: none;
+}
+
+.bottom-menu .last a{
+    border: none;
+}
+
+.vertical-line{
+    width: 4px;
+    height: 60%;
+    background: #ACACAC;
+}
+
+.first-span:before{
+    content: url(../images/call-ico.png);
+    position: absolute;
+    left: 10px;
+    top: 7px;
+}
+
+.second-span:before{
+    content: url(../images/call-back-ico.png);
+    position: absolute;
+    left: 10px;
+    top: 7px;
+}
+
+.first-span,.second-span{
+    position: relative;
+}
+
+.search-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    background: yellow;
+    border: none;
+    outline: none;    
+}
+
+.search-btn:hover{
+    cursor: pointer;
+     outline: none;  
+}
+
+form{
+    display: flex;
 }
