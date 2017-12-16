@@ -1249,6 +1249,10 @@ textarea, input {
     padding-left: 20px;
 }
 
+.bottom-menu li a.active{
+    color: white;
+}
+
 .bottom-menu li a:hover,
 .bottom-menu li a:visited{
     text-decoration: none;
