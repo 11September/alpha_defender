@@ -67,7 +67,7 @@
                     <form action="">
                         <input type="text" placeholder="Знайти...">
                     </form>
-                    <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                    <button class="search-btn" type="submit" href=""><i class="fa fa-search" aria-hidden="true"></i></button>
                 </span>
                 </div>
             </div>
