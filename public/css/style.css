@@ -757,6 +757,7 @@ a {
 
 .list-inline-item:nth-child(2n -1 ) {
     background-color: #717271;
+    margin-bottom: 5px!important;
 }
 
 .list-inline-item:hover {
@@ -801,6 +802,7 @@ a {
     .footer-image {
         display: flex;
         margin: 0 auto;
+        padding-right: 30px;
     }
 }
 
@@ -1443,6 +1445,13 @@ a:focus, a:hover {
     position: relative;
 }
 
+@media (max-width: 1366px) {
+    .menu-list .menu-list__item a:not(.no-link){
+        width: auto;
+        font-size: 18px;
+    }
+}
+
 @media (max-width: 1200px) {
     .menu-list .menu-list__item a {
         padding: 15px 20px;
@@ -1676,7 +1685,7 @@ a:focus, a:hover {
     height: 35px;
 }
 .ico-two {
-    margin: 55px 30px;
+    margin: 80px 30px;
     width: 35px;
     height: 35px;
 }
