@@ -32,7 +32,7 @@
             <a class="{{ Request::is('posts') ? 'active' : '' }}" href="{{ url('posts') }}">НОВИНИ</a>
         </li>
         <li class="logo menu-list__item">
-            <img src="{{ asset('images/logo.png') }}" alt="">
+            <a href="{{ url('/') }}" class="no-link"><img src="{{ asset('images/logo.png') }}" alt=""></a>
         </li>
         <li class="menu-list__item third {{ Request::is('contacts') ? 'active' : '' }}">
             <a class="{{ Request::is('contacts') ? 'active' : '' }}" href="{{ url('contacts') }}">КОНТАКТИ</a>

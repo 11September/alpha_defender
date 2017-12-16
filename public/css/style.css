@@ -1245,7 +1245,7 @@ textarea, input {
     text-decoration: none;
 }
 
-.menu-list .menu-list__item a {
+.menu-list .menu-list__item a:not(.no-link) {
     cursor: pointer;
     color: white;
     font-size: 22px;
@@ -1754,4 +1754,10 @@ a:focus, a:hover {
 
 form{
     display: flex;
+}
+
+
+.no-link{
+    display: flex;
+    justify-content: center;
 }
