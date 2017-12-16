@@ -303,6 +303,10 @@ a {
         padding-right: 15px!important;
     }
 
+    .menu-list {
+        background-image: none!important;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
