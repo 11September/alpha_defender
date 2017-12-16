@@ -39,10 +39,10 @@
     </ul>
 
     <ul class="bottom-menu">
-        <li><a href="">ІНКАСАЦІЯ ЮРИДИЧНИХ ОСІБ</a></li>
-        <li><a href="">ІНКАСАЦІЯ ФІЗИЧНИХ ОСІБ</a></li>
-        <li><a href="">ІНКАСАЦІЯ БАНКІВ</a></li>
-        <li><a href="">ОХОРОННА ДІЯЛЬНІСТЬ</a></li>
+        <li><a href="{{ url('page-inkasaciya-yuridichnih-osib') }}">ІНКАСАЦІЯ ЮРИДИЧНИХ ОСІБ</a></li>
+        <li><a href="{{ url('page-inkasaciya-fizichnih-osib') }}">ІНКАСАЦІЯ ФІЗИЧНИХ ОСІБ</a></li>
+        <li><a href="{{ url('page-inkasaciya-bankiv') }}">ІНКАСАЦІЯ БАНКІВ</a></li>
+        <li><a href="{{ url('page-ohoronna-diyal-nist') }}">ОХОРОННА ДІЯЛЬНІСТЬ</a></li>
     </ul>
 </nav>
 
