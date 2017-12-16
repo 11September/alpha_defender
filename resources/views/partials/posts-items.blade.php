@@ -5,7 +5,7 @@
             <div class="col-xl-6 col-md-5">
                 <div class="wrapper-item-image-post">
                     <a href="{{ action('PostsController@show', $post->id) }}">
-                        <img class="image-post" src="{{ asset('storage/' . $post->image) }}" alt="">
+                        <img class="image-post" src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->title }}">
                     </a>
                 </div>
             </div>
@@ -18,7 +18,7 @@
                             {{ $post->excerpt }}
                         @else
                             @php
-                                $body = strip_tags($featured->body); $body = substr($body,0,700);
+                                $body = strip_tags($post->body); $body = substr($body,0,700);
                             @endphp
                             {{ $body . " ..." }}
                         @endif

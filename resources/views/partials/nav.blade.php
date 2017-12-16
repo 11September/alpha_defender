@@ -14,10 +14,11 @@
         </div>
         <div class="search-body">
             <span class="search-field">
-                <form action="">
-                    <input type="text" placeholder="Знайти...">
+                <form method="post" action="{{ action('PostsController@search') }}">
+                     {{ csrf_field() }}
+                    <input name="search" type="text" placeholder="Знайти...">
                 </form>
-                <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                <a type="submit" href=""><i class="fa fa-search" aria-hidden="true"></i></a>
             </span>
         </div>
     </div>
@@ -39,10 +40,10 @@
     </ul>
 
     <ul class="bottom-menu">
-        <li><a href="">ІНКАСАЦІЯ ЮРИДИЧНИХ ОСІБ</a></li>
-        <li><a href="">ІНКАСАЦІЯ ФІЗИЧНИХ ОСІБ</a></li>
-        <li><a href="">ІНКАСАЦІЯ БАНКІВ</a></li>
-        <li><a href="">ОХОРОННА ДІЯЛЬНІСТЬ</a></li>
+        <li><a class="{{ Request::is('page-inkasaciya-yuridichnih-osib') ? 'active' : '' }}" href="{{ url('page-inkasaciya-yuridichnih-osib') }}">ІНКАСАЦІЯ ЮРИДИЧНИХ ОСІБ</a></li>
+        <li><a class="{{ Request::is('page-inkasaciya-fizichnih-osib') ? 'active' : '' }}" href="{{ url('page-inkasaciya-fizichnih-osib') }}">ІНКАСАЦІЯ ФІЗИЧНИХ ОСІБ</a></li>
+        <li><a class="{{ Request::is('page-inkasaciya-bankiv') ? 'active' : '' }}" href="{{ url('page-inkasaciya-bankiv') }}">ІНКАСАЦІЯ БАНКІВ</a></li>
+        <li><a class="{{ Request::is('page-ohoronna-diyal-nist') ? 'active' : '' }}" href="{{ url('page-ohoronna-diyal-nist') }}">ОХОРОННА ДІЯЛЬНІСТЬ</a></li>
     </ul>
 </nav>
 
