@@ -18,7 +18,11 @@ class PostsController extends Controller
 
     public function show(Post $post)
     {
-        return view('post', compact('post'));
+        $previous = Post::where('id', '<', $post->id)->max('id');
+
+        $next = Post::where('id', '>', $post->id)->min('id');
+
+        return view('post', compact('post', 'previous', 'next'));
     }
 
     public function search(Request $request)

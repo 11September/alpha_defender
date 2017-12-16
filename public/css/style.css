@@ -809,8 +809,21 @@
     float: left;
 }
 
+.post-single-description{
+    text-align: center;
+}
+
+.wrapper-content-one-post{
+    max-width: 100%;
+    overflow: hidden;
+}
+
 .previous-next {
     float: right;
+}
+
+.previous-next .view-more.disabled{
+    color: darkgray;
 }
 
 .vertical-separator {
