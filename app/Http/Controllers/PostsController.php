@@ -9,9 +9,11 @@ class PostsController extends Controller
 {
     public function index()
     {
+        $featured = Post::where('featured', 1)->first();
+
         $posts = Post::where('status', '=', "PUBLISHED")->paginate(1);
 
-        return view('posts', compact('posts'));
+        return view('posts', compact('posts', 'featured'));
     }
 
     public function show(Post $post)

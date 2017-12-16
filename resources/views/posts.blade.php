@@ -10,27 +10,37 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="title"><a href="#"><span class="num-block"></span>НОВИНИ</a></h2>
+                    <h2 class="title"><a href="{{ action('PostsController@index') }}"><span class="num-block"></span>НОВИНИ</a></h2>
                 </div>
 
                 <div class="col-md-12">
                     <a href="#">
-                        <img class="main-news-image" src="{{ asset('images/Main news.png') }}" alt="">
+                        <img class="main-news-image" src="{{ asset('storage/' . $featured->image) }}"
+                             alt="{{ $featured->title }}">
                     </a>
                 </div>
             </div>
             <div class="row wrapper-top-news-text">
                 <div class="col-md-2">
                     <p class="post-date">
-                        17.11.2017
+                        {{ \Carbon\Carbon::parse($featured->created_at)->format('d.m.Y')}}
                     </p>
                 </div>
                 <div class="col-md-10">
                     <div class="wrapper-description-post">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur facere inventore molestias nemo voluptatibus. Aspernatur assumenda dignissimos labore magnam magni maiores nemo quia? Accusamus adipisci animi beatae, dolores, error est eum excepturi expedita inventore praesentium, ullam voluptatibus. At commodi consequatur cum laboriosam maiores, nesciunt nulla, perspiciatis quam ratione repellat, totam unde. Autem exercitationem fugit maiores perferendis quasi similique. Accusantium consequuntur dolores doloribus enim eum illum inventore, libero, mollitia natus nisi perspiciatis praesentium quidem ratione recusandae reiciendis temporibus totam velit. At delectus eligendi error est eum eveniet illo, nam neque non nostrum odit optio quam quas rem reprehenderit saepe sapiente voluptatum?</p>
+
+                        @if($featured->excerpt && !empty($featured->excerpt))
+                            <p>{{ $featured->excerpt }}</p>
+                        @else
+                            @php
+                                $body = strip_tags($featured->body); $body = substr($body,0,1000);
+                            @endphp
+                            {{ $body . " ..." }}
+                        @endif
+
 
                         <div class="position-view-more-top-news">
-                            <a class="view-more" href="#">Докладніше...</a>
+                            <a class="view-more" href="{{ action('PostsController@show', $featured->id) }}">Докладніше...</a>
                         </div>
                     </div>
 
@@ -41,145 +51,8 @@
 
     <div id="news">
         <div class="container">
-            <div class="post-item">
-                <div class="row">
-                    <div class="col-xl-6 col-md-5">
-                        <div class="wrapper-item-image-post">
-                            <a href="#">
-                                <img src="{{ asset('images/all-news.png') }}" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-md-7">
-                        <div class="wrapper-item-description">
-                            <h4 class="post-item-title">Lorem ipsum dolor sit amet, consectetur.</h4>
-                            <p class="post-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Alias animi asperiores, at, culpa dolore est fugiat illum ipsam minima nam
-                                necessitatibus nesciunt omnis perferendis possimus quam quis recusandae sed, tempora
-                                voluptatem voluptates? Accusamus architecto asperiores doloribus ea explicabo fugiat
-                                inventore magnam molestiae optio? Consequuntur, earum hic nesciunt nihil nisi nobis
-                                officia possimus quo recusandae sit. Aliquid autem ex in inventore labore numquam odit
-                                pariatur perferendis perspiciatis, repudiandae saepe, sunt suscipit voluptatum? Ab amet
-                                dicta distinctio facilis officiis perspiciatis, temporibus voluptatibus. Asperiores
-                                commodi culpa debitis, dolorem fugiat maxime nesciunt numquam officiis quas.</p>
 
-                            <div class="wrapper-post-additional">
-                                <p class="post-date location-additional-date-block">
-                                    17.11.2017
-                                </p>
-                                <p class="location-additional-view-more">
-                                    <a class="view-more" href="#">Докладніше...</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="post-item">
-                <div class="row">
-                    <div class="col-xl-6 col-md-5">
-                        <div class="wrapper-item-image-post">
-                            <a href="#">
-                                <img src="{{ asset('images/all-news.png') }}" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-md-7">
-                        <div class="wrapper-item-description">
-                            <h4 class="post-item-title">Lorem ipsum dolor sit amet, consectetur.</h4>
-                            <p class="post-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Alias animi asperiores, at, culpa dolore est fugiat illum ipsam minima nam
-                                necessitatibus nesciunt omnis perferendis possimus quam quis recusandae sed, tempora
-                                voluptatem voluptates? Accusamus architecto asperiores doloribus ea explicabo fugiat
-                                inventore magnam molestiae optio? Consequuntur, earum hic nesciunt nihil nisi nobis
-                                officia possimus quo recusandae sit. Aliquid autem ex in inventore labore numquam odit
-                                pariatur perferendis perspiciatis, repudiandae saepe, sunt suscipit voluptatum? Ab amet
-                                dicta distinctio facilis officiis perspiciatis, temporibus voluptatibus. Asperiores
-                                commodi culpa debitis, dolorem fugiat maxime nesciunt numquam officiis quas.</p>
-
-                            <div class="wrapper-post-additional">
-                                <p class="post-date location-additional-date-block">
-                                    17.11.2017
-                                </p>
-                                <p class="location-additional-view-more">
-                                    <a class="view-more" href="#">Докладніше...</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="post-item">
-                <div class="row">
-                    <div class="col-xl-6 col-md-5">
-                        <div class="wrapper-item-image-post">
-                            <a href="#">
-                                <img src="{{ asset('images/all-news.png') }}" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-md-7">
-                        <div class="wrapper-item-description">
-                            <h4 class="post-item-title">Lorem ipsum dolor sit amet, consectetur.</h4>
-                            <p class="post-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Alias animi asperiores, at, culpa dolore est fugiat illum ipsam minima nam
-                                necessitatibus nesciunt omnis perferendis possimus quam quis recusandae sed, tempora
-                                voluptatem voluptates? Accusamus architecto asperiores doloribus ea explicabo fugiat
-                                inventore magnam molestiae optio? Consequuntur, earum hic nesciunt nihil nisi nobis
-                                officia possimus quo recusandae sit. Aliquid autem ex in inventore labore numquam odit
-                                pariatur perferendis perspiciatis, repudiandae saepe, sunt suscipit voluptatum? Ab amet
-                                dicta distinctio facilis officiis perspiciatis, temporibus voluptatibus. Asperiores
-                                commodi culpa debitis, dolorem fugiat maxime nesciunt numquam officiis quas.</p>
-
-                            <div class="wrapper-post-additional">
-                                <p class="post-date location-additional-date-block">
-                                    17.11.2017
-                                </p>
-                                <p class="location-additional-view-more">
-                                    <a class="view-more" href="#">Докладніше...</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="post-item">
-                <div class="row">
-                    <div class="col-xl-6 col-md-5">
-                        <div class="wrapper-item-image-post">
-                            <a href="#">
-                                <img src="{{ asset('images/all-news.png') }}" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-md-7">
-                        <div class="wrapper-item-description">
-                            <h4 class="post-item-title">Lorem ipsum dolor sit amet, consectetur.</h4>
-                            <p class="post-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Alias animi asperiores, at, culpa dolore est fugiat illum ipsam minima nam
-                                necessitatibus nesciunt omnis perferendis possimus quam quis recusandae sed, tempora
-                                voluptatem voluptates? Accusamus architecto asperiores doloribus ea explicabo fugiat
-                                inventore magnam molestiae optio? Consequuntur, earum hic nesciunt nihil nisi nobis
-                                officia possimus quo recusandae sit. Aliquid autem ex in inventore labore numquam odit
-                                pariatur perferendis perspiciatis, repudiandae saepe, sunt suscipit voluptatum? Ab amet
-                                dicta distinctio facilis officiis perspiciatis, temporibus voluptatibus. Asperiores
-                                commodi culpa debitis, dolorem fugiat maxime nesciunt numquam officiis quas.</p>
-
-                            <div class="wrapper-post-additional">
-                                <p class="post-date location-additional-date-block">
-                                    17.11.2017
-                                </p>
-                                <p class="location-additional-view-more">
-                                    <a class="view-more" href="#">Докладніше...</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @include('partials.posts-items')
 
             <div class="row">
                 <div class="col-lg-6 offset-lg-3 py-5">
