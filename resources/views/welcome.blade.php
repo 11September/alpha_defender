@@ -13,57 +13,47 @@
                 <div class="title">НОВИНИ</div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 news-pad">
-                    <div class="news">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 news-1">
-                            <img src="../images/news1.png" alt="">
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 news-1-desc">
-                            <div class="news-title">
-                            <div class="yel-block"></div>
-                                <div>
-                                    <h3 class="news-date">17.11.2017</h3>
-                                    <p>Стислий опис новин або подій виконаний у  Arial Narrow висотою 14pt. без заголовку чи підзаголовку. </p>
+
+                @foreach($posts as $post)
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 news-pad">
+                        <div class="news">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 news-1">
+                                <a href="{{ action('PostsController@show', $post->id) }}">
+                                    <img src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->title }}">
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 news-1-desc">
+                                <div class="news-title">
+                                    <div class="yel-block"></div>
+                                    <div>
+                                        <h3 class="news-date">
+                                            {{ \Carbon\Carbon::parse($post->created_at)->format('d.m.Y')}}
+                                        </h3>
+                                        <p>
+                                            @if($post->excerpt)
+                                                @php
+                                                    $body = strip_tags($post->excerpt); $body = substr($body,0,130);
+                                                @endphp
+                                                {{ $body . " ..." }}
+                                            @else
+                                                @php
+                                                    $body = strip_tags($post->body); $body = substr($body,0,130);
+                                                @endphp
+                                            {{ $body . " ..." }}
+                                            @endif
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 news-pad">
-                    <div class="news">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 news-1">
-                            <img src="../images/news2.png" alt="">
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 news-1-desc">
-                            <div class="news-title">
-                                <div class="yel-block"></div>
-                                <div>
-                                    <h3 class="news-date">17.11.2017</h3>
-                                    <p>Стислий опис новин або подій виконаний у  Arial Narrow висотою 14pt. без заголовку чи підзаголовку. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 news-pad">
-                    <div class="news">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 news-1">
-                            <img src="../images/news3.png" alt="">
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 news-1-desc">
-                            <div class="news-title">
-                                <div class="yel-block"></div>
-                                <div>
-                                    <h3 class="news-date">17.11.2017</h3>
-                                    <p>Стислий опис новин або подій виконаний у  Arial Narrow висотою 14pt. без заголовку чи підзаголовку. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                @endforeach
+
             </div>
             <div class="all-news">
-                <div>ВСІ НОВИНИ</div>
+                <div><a href="{{ url('posts') }}">ВСІ НОВИНИ</a></div>
             </div>
         </div>
     </section>
@@ -160,32 +150,43 @@
     <section class="about">
         <div class="container-fluid container-margin">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row nopad">
-                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-                        <div class="head-title">
-                            <div class="num-block"></div>
-                            <div class="title">ПРО НАС</div>
-                        </div>
-                        <div class="about-intro">
-                            <p>Обслуговуючий персонал Департаменту інкасації представлений висококваліфікованими  працівниками, які пройшли спеціальну підготовку в навчальних закладах Національного Банку України та мають багаторічний досвід роботи з інкасації коштів та перевезення валютних цінностей.</p>
-                        </div>
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                    <div class="head-title">
+                        <div class="num-block"></div>
+                        <div class="title">ПРО НАС</div>
                     </div>
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 resp nopad">
-                        <div class="about-img-1">
-                            <img src="../images/ammo.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 resp nopad">
-                        <div class="about-img-2">
-                            <img src="../images/t5.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-                        <div class="about-intro">
-                            <p>ТОВ «ОК «АЛЬФА-ЗАХИСТ» має власний повноцінний автопарк броньованих оперативних автомобілів марки Фольксваген Т-5, класу  ПЗСА-3 ДСТУ 3975-2000,  обладнанні сейфами тимчасового зберігання ДСТУ EN 1143-1:2014, обладнаних системою відстеження рухомих об'єктів «Глобус-М» в режимі реального часу за допомогою супутникової навігації GPS, що надає змогу миттєво визначати місцезнаходження автомобіля. Для досягнення найвищого рівня безпеки оперативні автомобілі обладнані засобами відео фіксації як в середині  так і зовні автомобіля, тривожної сигналізації, щоб у разі потреби одержати підтримку групи швидкого реагування УПО. Усі цінності, згідно з нормативними вимогами, окрім інкасаторів супроводжуються двома озброєними охоронниками.</p>
-                        </div>
+                    <div class="about-intro">
+                        <p>Обслуговуючий персонал Департаменту інкасації представлений висококваліфікованими
+                            працівниками, які пройшли спеціальну підготовку в навчальних закладах Національного Банку
+                            України та мають багаторічний досвід роботи з інкасації коштів та перевезення валютних
+                            цінностей.</p>
                     </div>
                 </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 resp nopad">
+                    <div class="about-img-1">
+                        <img src="../images/ammo.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 resp nopad">
+                    <div class="about-img-2">
+                        <img src="../images/t5.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                    <div class="about-intro">
+                        <p>ТОВ «ОК «АЛЬФА-ЗАХИСТ» має власний повноцінний автопарк броньованих оперативних автомобілів
+                            марки Фольксваген Т-5, класу ПЗСА-3 ДСТУ 3975-2000, обладнанні сейфами тимчасового
+                            зберігання ДСТУ EN 1143-1:2014, обладнаних системою відстеження рухомих об'єктів «Глобус-М»
+                            в режимі реального часу за допомогою супутникової навігації GPS, що надає змогу миттєво
+                            визначати місцезнаходження автомобіля. Для досягнення найвищого рівня безпеки оперативні
+                            автомобілі обладнані засобами відео фіксації як в середині так і зовні автомобіля, тривожної
+                            сигналізації, щоб у разі потреби одержати підтримку групи швидкого реагування УПО. Усі
+                            цінності, згідно з нормативними вимогами, окрім інкасаторів супроводжуються двома озброєними
+                            охоронниками.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 @endsection

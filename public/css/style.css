@@ -162,6 +162,12 @@ a {
     top: 20%;
 }
 
+.all-news a{
+    font-size: 14px;
+    font-weight: 600;
+    color: #195750;
+}
+
 .container-margin {
     margin: 0 50px;
 }

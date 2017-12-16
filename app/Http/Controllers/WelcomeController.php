@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Post;
 use Illuminate\Http\Request;
 
 class WelcomeController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        $posts = Post::where('status', '=', "PUBLISHED")->take(3)->latest()->orderBy('id', 'desc')->get();
+
+        return view('welcome', compact('posts'));
     }
 
     public function contacts()
