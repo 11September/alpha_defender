@@ -842,6 +842,7 @@
 
 /* contacts page */
 #contacts {
+    margin-top: -20px;
     padding-top: 60px;
     background-color: #dcdcdc;
     background-image: url(../images/LOGO_small.png);
@@ -1420,4 +1421,8 @@ textarea, input {
     background-image: url(http://localhost:8000/images/siluet.png);
     background-repeat: no-repeat;
     background-size: 20% 100%;
+}
+
+#page{
+    margin: 50px;
 }
