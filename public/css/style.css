@@ -42,6 +42,10 @@
     font-family: Arial Narrow;
 }
 
+a {
+    outline: 0;
+}
+
 /*.container-fluid {*/
 /*padding-right: 0!important;*/
 /*padding-left: 0!important;*/
@@ -1058,7 +1062,6 @@ textarea, input {
     color: white;
     background: #1E5A50;
     padding-left: 0;
-
 }
 
 .menu-list .menu-list__item {
@@ -1090,7 +1093,15 @@ textarea, input {
     color: yellow;
 }
 
+.menu-list .menu-list__item.active a.active{
+    background-color: #1A4941;
+    color: white;
+}
 
+.menu-list a:visited, a:active{
+    text-decoration: none;
+    outline: 0;
+}
 
 .menu-list .logo {
     width: 180px;

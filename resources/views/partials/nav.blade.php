@@ -23,12 +23,18 @@
     </div>
 
     <ul class="menu-list">
-        <li class="menu-list__item"><a href="{{ url('page-about') }}">ПРО НАС</a></li>
-        <li class="menu-list__item"><a href="{{ url('posts') }}">НОВИНИ</a></li>
+        <li class="menu-list__item {{ Request::is('page-about') ? 'active' : '' }}">
+            <a class="{{ Request::is('page-about') ? 'active' : '' }}" href="{{ url('page-about') }}">ПРО НАС</a>
+        </li>
+        <li class="menu-list__item {{ Request::is('posts') ? 'active' : '' }}">
+            <a class="{{ Request::is('posts') ? 'active' : '' }}" href="{{ url('posts') }}">НОВИНИ</a>
+        </li>
         <li class="logo menu-list__item">
             <img src="{{ asset('images/logo.png') }}" alt="">
         </li>
-        <li class="menu-list__item third"><a href="{{ url('contacts') }}">КОНТАКТИ</a></li>
+        <li class="menu-list__item third {{ Request::is('contacts') ? 'active' : '' }}">
+            <a class="{{ Request::is('contacts') ? 'active' : '' }}" href="{{ url('contacts') }}">КОНТАКТИ</a>
+        </li>
         <li class="menu-list__item third"><a data-toggle="modal" data-target="#myModal" href="#reviews">ЗАМОВИТИ ЗАРАЗ</a></li>
     </ul>
 
