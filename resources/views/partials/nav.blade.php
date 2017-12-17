@@ -143,9 +143,10 @@
 </div>
 
 <div class="mobi-icons">
-    <img class="header-ico ico-bg" src="images/mobi-fone.png" alt="">
-    <img class="header-ico ico-one" src="images/menu-ico.png" alt="">
-    <img class="header-ico ico-two hider" src="images/menu-ico-OPEN.png" alt="">
+    <img class="header-ico ico-bg" src="images/menu.png" alt="">
+    {{--<img class="header-ico ico-one" src="images/menu-ico.png" alt="">--}}
+    {{--<img class="header-ico ico-two hider" src="images/menu-ico-OPEN.png" alt="">--}}
+    <img class="header-ico ico-two hider" src="images/close.png" alt="">
 </div>
 
 

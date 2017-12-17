@@ -1042,13 +1042,14 @@ a {
 #search-form .form-group {
     margin: 10px 0;
     height: 66px;
+    width: 100%;
 }
 
 #search-form input {
     padding: 20px 10px 20px 20px;
     line-height: 20px;
     border-radius: 0;
-    width: 40%;
+    width: 50%;
 }
 
 .form-with-line {
@@ -1191,6 +1192,10 @@ textarea, input {
         width: 100%;
         text-align: center;
         margin-bottom: 90px;
+    }
+
+    #search-form .form-group{
+        width:100%;
     }
 }
 
@@ -1644,8 +1649,11 @@ a:focus, a:hover {
 }
 
 .ico-bg {
-    width: 250px;
-    height: 150px;
+    /*width: 250px;*/
+    /*height: 150px;*/
+
+    width: 140px;
+    height: 140px;
 }
 
 .ico-one {
