@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Дек 16 2017 г., 19:46
+-- Время создания: Дек 17 2017 г., 15:35
 -- Версия сервера: 5.7.19
 -- Версия PHP: 7.1.7
 
@@ -377,7 +377,6 @@ INSERT INTO `permission_role` (`permission_id`, `role_id`) VALUES
 (3, 1),
 (4, 1),
 (5, 1),
-(5, 3),
 (6, 1),
 (7, 1),
 (8, 1),
@@ -546,7 +545,11 @@ INSERT INTO `settings` (`id`, `key`, `display_name`, `value`, `details`, `type`,
 (7, 'admin.description', 'Admin Description', 'Welcome to Voyager. The Missing Admin for Laravel', '', 'text', 2, 'Admin'),
 (8, 'admin.loader', 'Admin Loader', '', '', 'image', 3, 'Admin'),
 (9, 'admin.icon_image', 'Admin Icon Image', '', '', 'image', 4, 'Admin'),
-(10, 'admin.google_analytics_client_id', 'Google Analytics Client ID (used for admin dashboard)', '', '', 'text', 1, 'Admin');
+(10, 'admin.google_analytics_client_id', 'Google Analytics Client ID (used for admin dashboard)', '', '', 'text', 1, 'Admin'),
+(12, 'site.youtube', 'youtube ссылка', 'https://www.youtube.com/', NULL, 'text', 6, 'Site'),
+(13, 'site.facebook', 'facebook ссылка', 'https://www.facebook.com/', NULL, 'text', 7, 'Site'),
+(14, 'site.twitter', 'twitter ссылка', 'https://twitter.com/', NULL, 'text', 8, 'Site'),
+(15, 'site.rrs', 'rrs ссылка', 'https://en.wikipedia.org/wiki/RRS', NULL, 'text', 9, 'Site');
 
 -- --------------------------------------------------------
 
@@ -765,7 +768,7 @@ ALTER TABLE `menus`
 -- AUTO_INCREMENT для таблицы `menu_items`
 --
 ALTER TABLE `menu_items`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT для таблицы `migrations`
 --
@@ -805,7 +808,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT для таблицы `settings`
 --
 ALTER TABLE `settings`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT для таблицы `translations`
 --
