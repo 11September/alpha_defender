@@ -147,8 +147,8 @@ a {
 }
 
 .all-news {
-    width: 140px;
-    height: 31px;
+    width: 150px;
+    height: 36px;
     background-color: #ebe31b;
     margin: 0 auto 30px;
 }
@@ -673,7 +673,7 @@ a {
 .notice-wrapper {
     margin: 0;
     width: 100%;
-    height: 120px;
+    min-height: 70px;
     background-color: #fff720;
     justify-content: center;
 }
@@ -686,12 +686,13 @@ a {
     font-size: 18px;
     font-weight: bold;
     color: #195750;
+    margin: 0;
 }
 
 @media screen and (max-width: 768px) {
     .notice-text {
         text-align: center;
-        padding: 0 15%;
+        padding: 10px 15%;
     }
 }
 
