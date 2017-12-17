@@ -11,7 +11,7 @@ class PostsController extends Controller
     {
         $featured = Post::where('featured', 1)->first();
 
-        $posts = Post::where('status', '=', "PUBLISHED")->paginate(1);
+        $posts = Post::where('status', '=', "PUBLISHED")->paginate(10);
 
         return view('posts', compact('posts', 'featured'));
     }
@@ -28,6 +28,10 @@ class PostsController extends Controller
     public function search(Request $request)
     {
         $searchQuery = $request->search;
+
+        if ($searchQuery == " " || $searchQuery == ""){
+            return redirect('/posts');
+        }
 
         $posts = Post::where('excerpt', 'like', "%$searchQuery%")
             ->orWhere('title', 'like' , "%$searchQuery%")
