@@ -20,7 +20,7 @@
                         <div class="news">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 news-1">
                                 <a href="{{ action('PostsController@show', $post->id) }}">
-                                    <img src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->title }}">
+                                    <img class="image-effect" src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->title }}">
                                 </a>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 news-1-desc">
