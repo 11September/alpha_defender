@@ -1432,7 +1432,7 @@ a:focus, a:hover {
 .socials-search:before {
     content: '';
     position: absolute;
-    width: 76%;
+    width: 100%;
     height: 5px;
     background: yellow;
 }
