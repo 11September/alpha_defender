@@ -18,26 +18,43 @@
                     <div class="social-wrapper">
                         <div class="social-block">
                             <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                        <i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                        <i class="fa fa-rss fa-2x" aria-hidden="true"></i>
-                                    </a>
-                                </li>
+
+                                @if(setting('site.youtube'))
+
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank"
+                                           href="{{ setting('site.youtube') }}">
+                                            <i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                @endif
+
+                                @if(setting('site.facebook'))
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank"
+                                           href="{{ setting('site.facebook') }}">
+                                            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                @endif
+
+                                @if(setting('site.twitter'))
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank"
+                                           href="{{ setting('site.twitter') }}">
+                                            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                @endif
+
+                                @if(setting('site.rrs'))
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="{{ setting('site.rrs') }}">
+                                            <i class="fa fa-rss fa-2x" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                @endif
+
                             </ul>
                         </div>
                     </div>

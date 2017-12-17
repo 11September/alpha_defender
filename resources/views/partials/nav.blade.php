@@ -2,22 +2,41 @@
     <div class="green-line"></div>
 
     <div class="yellow-line">
-        <p>ТОВ «ОК»АЛЬФА-ЗАХИСТ» пропонує  скористатися  послугами з інкасації коштів та перевезення валютних цінностей у зручний для Вас час.</p>
+        <p>ТОВ «ОК»АЛЬФА-ЗАХИСТ» пропонує скористатися послугами з інкасації коштів та перевезення валютних цінностей у
+            зручний для Вас час.</p>
     </div>
 
     <div class="socials-search">
         <div class="socials-icons">
-            <a href="" class="social-item odd"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-            <a href="" class="social-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="" class="social-item odd"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="" class="social-item"><i class="fa fa-rss" aria-hidden="true"></i></a>
+
+            @if(setting('site.youtube'))
+                <a href="{{ setting('site.youtube') }}" class="social-item odd"><i class="fa fa-youtube"
+                                                                                   aria-hidden="true"></i></a>
+            @endif
+
+            @if(setting('site.facebook'))
+                <a href="{{ setting('site.facebook') }}" class="social-item"><i class="fa fa-facebook"
+                                                                                    aria-hidden="true"></i></a>
+            @endif
+
+            @if(setting('site.twitter'))
+                <a href="{{ setting('site.twitter') }}" class="social-item odd"><i class="fa fa-twitter"
+                                                                                   aria-hidden="true"></i></a>
+            @endif
+
+            @if(setting('site.rrs'))
+                <a href="{{ setting('site.rrs') }}" class="social-item"><i class="fa fa-rss"
+                                                                               aria-hidden="true"></i></a>
+            @endif
+
         </div>
         <div class="search-body">
             <span class="search-field">
                 <form method="post" action="{{ action('PostsController@search') }}">
                      {{ csrf_field() }}
                     <input name="search" type="text" placeholder="Знайти...">
-                    <button class="search-btn" type="submit" href=""><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <button class="search-btn" type="submit" href=""><i class="fa fa-search"
+                                                                        aria-hidden="true"></i></button>
                 </form>
                 
             </span>
@@ -37,42 +56,70 @@
         <li class="menu-list__item third {{ Request::is('contacts') ? 'active' : '' }}">
             <a class="{{ Request::is('contacts') ? 'active' : '' }}" href="{{ url('contacts') }}">КОНТАКТИ</a>
         </li>
-        <li class="menu-list__item third"><a data-toggle="modal" data-target="#myModal" href="#reviews">ЗАМОВИТИ ЗАРАЗ</a></li>
+        <li class="menu-list__item third"><a data-toggle="modal" data-target="#myModal" href="#reviews">ЗАМОВИТИ
+                ЗАРАЗ</a></li>
     </ul>
 
     <ul class="bottom-menu">
-        <li><a class="{{ Request::is('page-inkasaciya-yuridichnih-osib') ? 'active' : '' }}" href="{{ url('page-inkasaciya-yuridichnih-osib') }}">ІНКАСАЦІЯ ЮРИДИЧНИХ ОСІБ</a></li>
-        <li><a class="{{ Request::is('page-inkasaciya-fizichnih-osib') ? 'active' : '' }}" href="{{ url('page-inkasaciya-fizichnih-osib') }}">ІНКАСАЦІЯ ФІЗИЧНИХ ОСІБ</a></li>
-        <li><a class="{{ Request::is('page-inkasaciya-bankiv') ? 'active' : '' }}" href="{{ url('page-inkasaciya-bankiv') }}">ІНКАСАЦІЯ БАНКІВ</a></li>
-        <li class="last"><a class="{{ Request::is('page-ohoronna-diyal-nist') ? 'active' : '' }}" href="{{ url('page-ohoronna-diyal-nist') }}">ОХОРОННА ДІЯЛЬНІСТЬ</a></li>
+        <li><a class="{{ Request::is('page-inkasaciya-yuridichnih-osib') ? 'active' : '' }}"
+               href="{{ url('page-inkasaciya-yuridichnih-osib') }}">ІНКАСАЦІЯ ЮРИДИЧНИХ ОСІБ</a></li>
+        <li><a class="{{ Request::is('page-inkasaciya-fizichnih-osib') ? 'active' : '' }}"
+               href="{{ url('page-inkasaciya-fizichnih-osib') }}">ІНКАСАЦІЯ ФІЗИЧНИХ ОСІБ</a></li>
+        <li><a class="{{ Request::is('page-inkasaciya-bankiv') ? 'active' : '' }}"
+               href="{{ url('page-inkasaciya-bankiv') }}">ІНКАСАЦІЯ БАНКІВ</a></li>
+        <li class="last"><a class="{{ Request::is('page-ohoronna-diyal-nist') ? 'active' : '' }}"
+                            href="{{ url('page-ohoronna-diyal-nist') }}">ОХОРОННА ДІЯЛЬНІСТЬ</a></li>
     </ul>
 </nav>
 
-    <div class="menu hiden">
-        <nav class="main-navigation" id="toper">
+<div class="menu hiden">
+    <nav class="main-navigation" id="toper">
 
-            <div class="yellow-line">
-                <p>ТОВ «ОК»АЛЬФА-ЗАХИСТ» пропонує  скористатися  послугами з інкасації коштів та перевезення валютних цінностей у зручний для Вас час.</p>
+        <div class="yellow-line">
+            <p>ТОВ «ОК»АЛЬФА-ЗАХИСТ» пропонує скористатися послугами з інкасації коштів та перевезення валютних
+                цінностей у зручний для Вас час.</p>
+        </div>
+
+        <div class="socials-search">
+            <div class="socials-icons">
+
+                @if(setting('site.youtube'))
+                    <a href="{{ setting('site.youtube') }}" class="social-item odd"><i class="fa fa-youtube"
+                                                                                       aria-hidden="true"></i></a>
+                @endif
+
+                @if(setting('site.facebook'))
+                    <a href="{{ setting('site.facebook') }}" class="social-item odd"><i class="fa fa-facebook"
+                                                                                       aria-hidden="true"></i></a>
+                @endif
+
+                @if(setting('site.twitter'))
+                    <a href="{{ setting('site.twitter') }}" class="social-item odd"><i class="fa fa-twitter"
+                                                                                       aria-hidden="true"></i></a>
+                @endif
+
+                @if(setting('site.rrs'))
+                    <a href="{{ setting('site.rrs') }}" class="social-item odd"><i class="fa fa-rss"
+                                                                                       aria-hidden="true"></i></a>
+                @endif
+
+
+                {{--<a href="" class="social-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>--}}
+                {{--<a href="" class="social-item odd"><i class="fa fa-twitter" aria-hidden="true"></i></a>--}}
+                {{--<a href="" class="social-item"><i class="fa fa-rss" aria-hidden="true"></i></a>--}}
             </div>
-
-            <div class="socials-search">
-                <div class="socials-icons">
-                <a href="" class="social-item odd"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                <a href="" class="social-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="" class="social-item odd"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="" class="social-item"><i class="fa fa-rss" aria-hidden="true"></i></a>
-                </div>
-                <div class="search-body">
+            <div class="search-body">
                 <span class="search-field">
                     <form action="">
                         <input type="text" placeholder="Знайти...">
                     </form>
-                    <button class="search-btn" type="submit" href=""><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <button class="search-btn" type="submit" href=""><i class="fa fa-search"
+                                                                        aria-hidden="true"></i></button>
                 </span>
-                </div>
             </div>
+        </div>
 
-            <ul class="menu-list">
+        <ul class="menu-list">
             <li class="menu-list__item {{ Request::is('page-about') ? 'active' : '' }}">
                 <a class="{{ Request::is('page-about') ? 'active' : '' }}" href="{{ url('page-about') }}">ПРО НАС</a>
             </li>
@@ -85,20 +132,21 @@
             <li class="menu-list__item third {{ Request::is('contacts') ? 'active' : '' }}">
                 <a class="{{ Request::is('contacts') ? 'active' : '' }}" href="{{ url('contacts') }}">КОНТАКТИ</a>
             </li>
-            <li class="menu-list__item third"><a data-toggle="modal" data-target="#myModal" href="#reviews">ЗАМОВИТИ ЗАРАЗ</a></li>
+            <li class="menu-list__item third"><a data-toggle="modal" data-target="#myModal" href="#reviews">ЗАМОВИТИ
+                    ЗАРАЗ</a></li>
             <li class="menu-list__item"><a href="">ІНКАСАЦІЯ ЮРИДИЧНИХ ОСІБ</a></li>
             <li class="menu-list__item"><a href="">ІНКАСАЦІЯ ФІЗИЧНИХ ОСІБ</a></li>
             <li class="menu-list__item"><a href="">ІНКАСАЦІЯ БАНКІВ</a></li>
             <li class="menu-list__item"><a href="">ОХОРОННА ДІЯЛЬНІСТЬ</a></li>
-            </ul>
-        </nav>
-    </div>
+        </ul>
+    </nav>
+</div>
 
-    <div class="mobi-icons">
-        <img class="header-ico ico-bg" src="images/mobi-fone.png" alt="">
-        <img class="header-ico ico-one" src="images/menu-ico.png" alt="">
-        <img class="header-ico ico-two hider" src="images/menu-ico-OPEN.png" alt="">
-    </div>
+<div class="mobi-icons">
+    <img class="header-ico ico-bg" src="images/mobi-fone.png" alt="">
+    <img class="header-ico ico-one" src="images/menu-ico.png" alt="">
+    <img class="header-ico ico-two hider" src="images/menu-ico-OPEN.png" alt="">
+</div>
 
 
 <!-- Modal -->

@@ -22,7 +22,7 @@ class ContactsDimmer extends AbstractWidget
         return view('voyager::dimmer', array_merge($this->config, [
             'icon'   => 'voyager-people',
             'title'  => "{$count} {$string}",
-            'text'   => "У Вас {$count} людей.",
+            'text'   => "В базі даних {$count} людей.",
             'button' => [
                 'text' => 'Посмотреть всех',
                 'link' => route('voyager.persons.index'),
