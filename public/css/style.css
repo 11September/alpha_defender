@@ -46,7 +46,7 @@ a {
     outline: 0;
 }
 
-.image-effect{
+.image-effect {
     transition: .5s ease;
     opacity: 1;
 }
@@ -67,7 +67,14 @@ a {
 
 /*news section start*/
 .intro-news {
-    margin-top: 67px;
+    margin-top: 30px;
+    /*padding-bottom: 30px;*/
+    /*box-shadow: -8px 22px 64px -11px rgba(0, 0, 0, 1);*/
+}
+
+.box-shadow {
+    height: 30px;
+    width: 100%;
 }
 
 .head-title {
@@ -94,7 +101,7 @@ a {
 }
 
 .title {
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 600;
     color: #376c63;
 }
@@ -112,16 +119,17 @@ a {
 }
 
 .news-title {
-    display: flex;
     align-items: center;
+    padding: 15px 0;
+    overflow: hidden;
+    height: 100%;
 }
 
 .news-date {
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 400;
     color: #376c63;
-    padding-top: 14px;
-    margin: 0;
+    margin: 0 0 3px 0;
 }
 
 .yel-block {
@@ -130,11 +138,13 @@ a {
     background-color: #fff720;
     float: left;
     margin-right: 10px;
+    margin-top: 10px;
 }
 
 .news-title p {
-    margin-right: 30px;
-    font-size: 18px;
+    font-size: 17px;
+    margin: 0;
+    overflow: hidden;
 }
 
 .news-1 {
@@ -157,7 +167,7 @@ a {
     width: 150px;
     height: 36px;
     background-color: #ebe31b;
-    margin: 0 auto 30px;
+    margin: 0 auto;
 }
 
 .all-news div {
@@ -176,7 +186,7 @@ a {
 }
 
 .container-margin {
-    margin: 0 50px;
+    margin: 0 5%;
 }
 
 @media screen and (max-width: 991px) {
@@ -327,8 +337,8 @@ a {
         margin: 0;
     }
 
-    .container-margin {
-        margin: 0;
+    .intro-news {
+        margin: 50px 10% 0 10%;
     }
 
     .news-pad {
@@ -513,17 +523,17 @@ a {
 }
 
 .label-pos {
-    height: 60px;
-    width: 208px;
+    height: 56px;
+    width: 180px;
     background-color: #fff720;
     display: flex;
     align-items: center;
-    margin-left: 15%;
+    margin-left: 10%;
 }
 
 .incasacia {
     margin-top: 45px;
-    margin-left: 20%;
+    margin-left: 15%;
 }
 
 .incasacia-3 {
@@ -532,9 +542,10 @@ a {
 }
 
 .incasacia h2 {
-    font-size: 26px;
+    font-size: 25px;
     font-weight: 600;
     color: #ffffff;
+    margin-bottom: 15px;
 }
 
 .incasacia-2 h2 {
@@ -544,29 +555,37 @@ a {
 }
 
 .incasacia-3 h2 {
-    font-size: 26px;
+    font-size: 25px;
     font-weight: 600;
     color: #5b5b5b;
 }
 
 .incasacia li {
     color: #8dcff4;
+    font-size: 21px;
 }
 
+/*.incasacia li:before {*/
+/*content:"· ";*/
+/*font-size:120px;*/
+/*vertical-align:middle;*/
+/*line-height:20px;*/
+/*}*/
+
 .incasacia li span {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 25px;
     color: #ffffff;
 }
 
 .incasacia-2 li span {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 25px;
     color: #5b5b5b;
 }
 
 .incasacia-3 li span {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 25px;
     color: #5b5b5b;
 }
@@ -594,7 +613,7 @@ a {
 .about {
     padding-top: 60px;
     background-color: #dcdcdc;
-    background-image: url(../images/LOGO_small.png);
+    background-image: url(../images/bg-about.png);
     background-repeat: no-repeat;
     background-position: top center;
 }
@@ -607,12 +626,16 @@ a {
     width: 100%;
 }
 
-.about-intro {
-    margin-bottom: 90px;
+.wrapper-about-top {
+    margin-bottom: 40px;
+}
+
+.wrapper-about-bottom {
+    padding-bottom: 40px;
 }
 
 .about-intro p {
-    font-size: 22px;
+    font-size: 17px;
     color: #5b5b5b;
 }
 
@@ -621,7 +644,17 @@ a {
     align-items: center;
 }
 
+.list-color-font li {
+    color: #8dcff4;
+    font-size: 20px;
+}
+
 @media screen and (max-width: 991px) {
+    .incasacia {
+        margin-top: 25px;
+        margin-left: 10%;
+    }
+
     .about-intro {
         margin-bottom: 60px;
     }
@@ -633,13 +666,52 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+    .posluga-1 .incasacia {
+        margin: 25px auto !important;
+        text-align: center;
+    }
+
+    .posluga-1 .incasacia ul {
+        list-style-type: none;
+    }
+
+    .incasacia-3 {
+        margin: 0 auto !important;
+        text-align: center;
+    }
+
+    .incasacia-3 ul {
+        list-style-type: none;
+    }
+
+    .posluga-4 .incasacia-2 {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .posluga-4 .incasacia-2 ul {
+        list-style-type: none;
+    }
+
     .about-intro {
         margin-bottom: 50px;
     }
 
     .about-intro p {
-        font-size: 18px;
+        font-size: 15px;
         color: #5b5b5b;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .incasacia-2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .incasacia-2 ul {
+        list-style-type: none;
+        padding-left: 0;
     }
 }
 
@@ -700,12 +772,12 @@ a {
 }
 
 .footer-wrapper {
-    height: 214px;
+    height: 180px;
 }
 
 .footer-image {
-    width: 180px;
-    padding: 30px 0;
+    width: 160px;
+    padding: 25px 0;
 }
 
 .wrrapper-description {
@@ -740,8 +812,8 @@ a {
 .list-inline-item {
     margin: 0 !important;
     padding: 0 !important;
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
 }
 
 .list-inline-item:nth-child(2n) {
@@ -762,13 +834,13 @@ a {
 }
 
 .list-inline-item a {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
 }
 
 .list-inline-item a i {
     color: #525151;
-    padding: 12px;
+    padding: 10px;
 }
 
 .copyright {
@@ -840,7 +912,7 @@ a {
 }
 
 .title span {
-    margin-top: 8px;
+    margin-top: 2px;
 }
 
 #top-news .title {
@@ -1028,7 +1100,7 @@ a {
 }
 
 .contact-intro-text {
-    margin: 20px 0 50px 15px;
+    margin: 30px 0 50px 15px;
     font-size: 21px;
     color: #5b5b5b;
 }
@@ -1039,6 +1111,7 @@ a {
 }
 
 #contact-form {
+    display: block;
     padding-right: 10%;
     margin: 0;
 }
@@ -1075,7 +1148,7 @@ a {
 
 #contact-form .form-group {
     margin: 10px 0;
-    height: 66px;
+    height: 60px;
 }
 
 #contact-form .form-group:nth-child(3) {
@@ -1156,7 +1229,7 @@ textarea, input {
 
 @media screen and (max-width: 991px) {
     .wrapper-main-contact-block {
-        margin: 0 0 50px 0;
+        margin: 0 0 0 0;
     }
 
     .wrapper-contact-item {
@@ -1300,8 +1373,7 @@ textarea, input {
     color: white;
     font-size: 30px;
     position: relative;
-    top: 10px;
-
+    top: 8px;
 }
 
 .social-item {
@@ -1357,6 +1429,10 @@ textarea, input {
 .socials-search .socials-icons .social-item:hover {
     background-color: yellow;
     color: #0d3625;
+}
+
+.social-item:hover .fa{
+    color: #1A4941;
 }
 
 .search-body {
@@ -1529,6 +1605,16 @@ a:focus, a:hover {
     }
 }
 
+.posluga-1{
+    box-shadow: 0 5px 5px -5px #333;
+}
+
+#map{
+    -webkit-box-shadow: 0 10px 50px -5px #333;
+    -moz-box-shadow: 0 10px 50px -5px #333;
+    box-shadow: 0 10px 50px -5px #333;
+}
+
 #map iframe {
     width: 100%;
 }
@@ -1542,6 +1628,10 @@ a:focus, a:hover {
     display: flex;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.modal-body form{
+    display: block;
 }
 
 .modal-body .left-part,
@@ -1640,7 +1730,7 @@ a:focus, a:hover {
 }
 
 #page {
-    margin: 50px;
+    margin: 30px 0;
 }
 
 .header-ico {
@@ -1669,11 +1759,8 @@ a:focus, a:hover {
 }
 
 .ico-bg {
-    /*width: 250px;*/
-    /*height: 150px;*/
-
-    width: 140px;
-    height: 140px;
+    width: 90px;
+    height: 80px;
 }
 
 .ico-one {
@@ -1683,9 +1770,9 @@ a:focus, a:hover {
 }
 
 .ico-two {
-    margin: 80px 30px;
-    width: 35px;
-    height: 35px;
+    margin: 60px 30px;
+    width: 30px;
+    height: 30px;
 }
 
 .hider {
@@ -1694,6 +1781,10 @@ a:focus, a:hover {
 
 .hiden {
     display: none;
+}
+
+.title-page{
+    text-align: center;
 }
 
 .menu {

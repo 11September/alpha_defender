@@ -22,6 +22,13 @@
     <div id="page">
         <div class="container">
             <div class="content-page">
+
+                @if($page->title)
+                    <div>
+                        <h3 class="title-page">{{ $page->title }}</h3>
+                    </div>
+                @endif
+
                 @if($page->image)
                     <div class="image">
                         <img src="{{ asset('storage/' . $page->image) }}"
