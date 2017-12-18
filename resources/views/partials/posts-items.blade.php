@@ -2,14 +2,14 @@
 
     <div class="post-item">
         <div class="row">
-            <div class="col-xl-6 col-md-5">
+            <div class="col-xl-4 col-md-5 no-some-pad-marg">
                 <div class="wrapper-item-image-post">
                     <a href="{{ action('PostsController@show', $post->id) }}">
                         <img class="image-post image-effect" src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->title }}">
                     </a>
                 </div>
             </div>
-            <div class="col-xl-6 col-md-7">
+            <div class="col-xl-8 col-md-7 no-some-pad-marg wrapper-post-item-back">
                 <div class="wrapper-item-description">
                     <h4 class="post-item-title">{{ $post->title }}</h4>
                     <p class="post-item-description">
