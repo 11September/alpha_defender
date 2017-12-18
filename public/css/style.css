@@ -69,7 +69,26 @@ a {
 .intro-news {
     margin-top: 30px;
     /*padding-bottom: 30px;*/
-    /*box-shadow: -8px 22px 64px -11px rgba(0, 0, 0, 1);*/
+	-webkit-box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);
+	box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);
+}
+
+.notice-wrapper{
+	-webkit-box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);
+	box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);	
+}
+
+
+.footer{
+	position: relative;
+    z-index: -1;
+}
+
+.poslugy{
+	position: relative;
+    z-index: -1;
 }
 
 .box-shadow {
@@ -502,24 +521,40 @@ a {
     height: 380px;
     width: 100%;
     background-color: #1e5a50;
+    -webkit-box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);
+	box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);
+	position: relative;
+	z-index: 5
 }
 
 .posluga-2 {
     height: 380px;
     width: 100%;
     background-color: #ffffff;
+    -webkit-box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);
+	box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);
+	position: relative;
+	z-index: 4;
 }
 
 .posluga-3 {
     height: 380px;
     width: 100%;
     background-color: #dcdcdc;
+    -webkit-box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);
+	box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);
+	position: relative;
+	z-index: 3;
 }
 
 .posluga-4 {
     height: 380px;
     width: 100%;
     background-color: #ffffff;
+	position: relative;
 }
 
 .label-pos {
@@ -874,7 +909,10 @@ a {
 /* footer end */
 /* news page */
 #top-news {
-    margin-bottom: 90px;
+    padding-bottom: 90px;
+    -webkit-box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);
+	box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);
 }
 
 .main-news-image {
@@ -901,9 +939,10 @@ a {
 }
 
 #news {
-    margin-top: -16px !important;
     padding: 10px 0;
     background-color: #dcdcdc;
+    position: relative;
+    z-index: -1;
 }
 
 .post-item {
@@ -1628,9 +1667,6 @@ a:focus, a:hover {
     }
 }
 
-.posluga-1{
-    box-shadow: 0 5px 5px -5px #333;
-}
 
 #map{
     -webkit-box-shadow: 0 10px 50px -5px #333;
@@ -1878,7 +1914,7 @@ a:focus, a:hover {
     outline: none;
 }
 
-form {
+.search-body form {
     display: flex;
     margin-bottom: 0;
 }
@@ -1891,3 +1927,4 @@ form {
 .search-field i {
     font-size: 14px;
 }
+
