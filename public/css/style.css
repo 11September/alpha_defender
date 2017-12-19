@@ -210,6 +210,10 @@ a {
 }
 
 @media screen and (max-width: 991px) {
+	.top-header{
+	    display: block!important;
+	}
+
     .news-title p {
         margin-right: 10px;
         font-size: 17px;
@@ -1836,6 +1840,24 @@ a:focus, a:hover {
     top: 0;
 }
 
+.header-body{
+	display: flex;
+    justify-content: space-between;
+}
+
+.mobi-icons .fa-bars{
+	content: "\f0c9";
+    font-size: 40px;
+    padding: 20px;
+    color: #fff720;
+    display: inline-block;
+}
+
+.header-body .logo img{
+	width: 70px;
+    padding: 10px;
+}
+
 .ico-bg {
     width: 90px;
     height: 80px;
@@ -1881,7 +1903,7 @@ a:focus, a:hover {
 }
 
 .fone-hide {
-    display: none;
+    display: none!important;
 }
 
 .bottom-menu .last a {
@@ -1942,3 +1964,20 @@ a:focus, a:hover {
     font-size: 14px;
 }
 
+.top-header{
+    height: 80px;
+    display: none;
+}
+
+.header-body {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background: #1e5a50;
+    z-index: 5;
+}
+
+.zero-width{
+	width: 0;
+}

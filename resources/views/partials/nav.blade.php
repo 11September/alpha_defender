@@ -142,11 +142,18 @@
     </nav>
 </div>
 
-<div class="mobi-icons">
-    <img class="header-ico ico-bg" src="images/menu.png" alt="">
-    {{--<img class="header-ico ico-one" src="images/menu-ico.png" alt="">--}}
-    {{--<img class="header-ico ico-two hider" src="images/menu-ico-OPEN.png" alt="">--}}
-    <img class="header-ico ico-two hider" src="images/close.png" alt="">
+
+<div class="top-header">
+
+	<div class="header-body">
+	<div class="logo"> <img src="{{ asset('images/logo.png') }}" alt=""></div>
+	<div class="mobi-icons">
+	    <i class="fa fa-bars header-ico ico-bg" aria-hidden="true"></i>
+	    {{--<img class="header-ico ico-one" src="images/menu-ico.png" alt="">--}}
+	    {{--<img class="header-ico ico-two hider" src="images/menu-ico-OPEN.png" alt="">--}}
+	    <img class="header-ico ico-two hider" src="images/close.png" alt="">
+	</div>
+	</div>
 </div>
 
 
