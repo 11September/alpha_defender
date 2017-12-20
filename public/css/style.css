@@ -807,6 +807,10 @@ a {
 }
 
 @media screen and (max-width: 576px) {
+    .intro-news {
+        margin: 10px 5% 0 5%;
+    }
+
     .posluga-1 {
         min-height: 400px;
     }
@@ -826,6 +830,10 @@ a {
         width: 100%;
         list-style-type: none;
         padding-left: 0;
+    }
+
+    .posluga-4{
+        height: 440px;
     }
 }
 
