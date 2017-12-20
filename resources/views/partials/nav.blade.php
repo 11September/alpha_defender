@@ -120,6 +120,9 @@
         </div>
 
         <ul class="menu-list">
+            <li class="menu-list__item {{ Request::is('/') ? 'active' : '' }}">
+                <a class="{{ Request::is('/') ? 'active' : '' }}" href="{{ url('/') }}">ГОЛОВНА</a>
+            </li>
             <li class="menu-list__item {{ Request::is('page-about') ? 'active' : '' }}">
                 <a class="{{ Request::is('page-about') ? 'active' : '' }}" href="{{ url('page-about') }}">ПРО НАС</a>
             </li>
@@ -146,7 +149,7 @@
 <div class="top-header">
 
 	<div class="header-body">
-	<div class="logo"> <img src="{{ asset('images/logo.png') }}" alt=""></div>
+	<div class="logo"><a href="{{ url('/') }}"><img src="{{ asset('images/logo.png') }}" alt=""></a></div>
 	<div class="mobi-icons">
 	    <i class="fa fa-bars header-ico ico-bg" aria-hidden="true"></i>
 	    {{--<img class="header-ico ico-one" src="images/menu-ico.png" alt="">--}}
@@ -161,19 +164,27 @@
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="close-modal" aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
             <div class="modal-body">
-                <div class="left-part">
-                    <h3>ЗАТЕЛЕФОНУЙТЕ</h3>
-                    <a href=""><span class="first-span">Дзвонити</span></a>
-                    <p>Або дзвоніть на номер +38(000)000-00-00</p>
-                    <p>якщо ваш пристрій не підтримує дзвінки</p>
-                    <a href=""><span class="second-span">Замовити дзвінок</span></a>
-                    <p>Вам передзвонять, упродовж декіькох хвилин</p>
-                </div>
-                <div class="middle-part">
-                    <h3>Або</h3>
-                    <div class="vertical-line"></div>
-                </div>
+                {{--<div class="left-part">--}}
+                    {{--<h3>ЗАТЕЛЕФОНУЙТЕ</h3>--}}
+                    {{--<a href=""><span class="first-span">Дзвонити</span></a>--}}
+                    {{--<p>Або дзвоніть на номер +38(000)000-00-00</p>--}}
+                    {{--<p>якщо ваш пристрій не підтримує дзвінки</p>--}}
+                    {{--<a href=""><span class="second-span">Замовити дзвінок</span></a>--}}
+                    {{--<p>Вам передзвонять, упродовж декіькох хвилин</p>--}}
+                {{--</div>--}}
+                {{--<div class="middle-part">--}}
+                    {{--<h3>Або</h3>--}}
+                    {{--<div class="vertical-line"></div>--}}
+                {{--</div>--}}
                 <div class="right-part">
                     <h3>ЗАЛИШТЕ ПОВІДОМЛЕННЯ</h3>
                     <form action="">

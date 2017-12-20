@@ -152,6 +152,10 @@ a {
     margin: 0 0 3px 0;
 }
 
+.menu-list .hidden{
+    display: none;
+}
+
 .yel-block {
     height: 80px;
     width: 17px;
@@ -267,22 +271,30 @@ a {
         flex-direction: column;
     }
 
+    .main-navigation .yellow-line{
+        display: none;
+    }
+
     .socials-search {
         order: 2;
     }
 
+    /*.menu-list .hidden{*/
+        /*display: flex !important;*/
+    /*}*/
+
     .menu-list .menu-list__item:nth-child(1) {
-        order: 2;
+        order: 1;
     }
 
     .menu-list .menu-list__item:nth-child(2) {
-        order: 3;
+        order: 2;
     }
 
     .menu-list .menu-list__item:nth-child(3) {
-        order: 1;
+        order: 3;
         text-align: center;
-        margin: 0 auto;
+        /*margin: 0 auto;*/
     }
 
     .menu-list .menu-list__item:nth-child(4) {
@@ -309,6 +321,10 @@ a {
         order: 9;
     }
 
+    .menu-list .menu-list__item:nth-child(9) {
+        order: 10;
+    }
+
     .menu-list .menu-list__item a {
         width: 100% !important;
         font-size: 16px !important;
@@ -319,6 +335,7 @@ a {
         width: 150px !important;
         height: 160px;
         position: static !important;
+        display: none !important;
     }
 
     .bottom-menu {
@@ -348,6 +365,10 @@ a {
         margin-right: 10px;
         font-size: 15px;
     }
+
+    .modal.show .modal-dialog{
+        max-width: 80% !important;
+    }
 	
 	/**
 	.label-pos{
@@ -370,7 +391,7 @@ a {
     }
 
     .intro-news {
-        margin: 50px 10% 0 10%;
+        margin: 10px 10% 0 10%;
 		-moz-box-shadow:none;
 		box-shadow:none;
     }
@@ -853,6 +874,10 @@ a {
     height: 100%;
 }
 
+.footer-wrapper .social-wrapper .list-inline-item:hover{
+    background-color: yellow;
+}
+
 .social-block {
     align-self: center;
 }
@@ -926,6 +951,7 @@ a {
 /* footer end */
 /* news page */
 #top-news {
+    margin-top: -30px;
     padding-bottom: 90px;
     -webkit-box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);
 	-moz-box-shadow: 1px 17px 45px -4px rgba(0,0,0,0.75);
@@ -1630,6 +1656,7 @@ a:focus, a:hover {
 
     .menu-list .menu-list__item {
         text-align: center;
+        order: 10;
     }
 
     .bottom-menu li a {
@@ -1697,14 +1724,34 @@ a:focus, a:hover {
 }
 
 .modal-dialog {
-    max-width: 90%;
+    max-width: 60%;
     margin: 30px auto;
+}
+
+.modal-header{
+    border: none;
 }
 
 .modal-body {
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+button.close{
+    font-size: 56px;
+}
+
+button:active{
+    outline: none;
+    border: none;
+}
+
+button:focus {outline:0;}
+
+.button.close{
+    width:40px;
+    height:40px;
 }
 
 .modal-body form{
@@ -1713,7 +1760,7 @@ a:focus, a:hover {
 
 .modal-body .left-part,
 .modal-body .right-part {
-    width: 45%;
+    width: 100%;
     text-align: center;
 }
 
@@ -1783,7 +1830,7 @@ a:focus, a:hover {
 }
 
 .btn-submit {
-    width: 200px !important;
+    /*width: 200px !important;*/
     padding-top: 12px !important;
     padding-bottom: 12px !important;
     text-transform: uppercase;
@@ -1855,7 +1902,8 @@ a:focus, a:hover {
 
 .header-body .logo img{
 	width: 70px;
-    padding: 10px;
+    padding: 2px;
+    margin-left: 30px;
 }
 
 .ico-bg {
@@ -1870,7 +1918,7 @@ a:focus, a:hover {
 }
 
 .ico-two {
-    margin: 60px 30px;
+    margin: 40px 30px;
     width: 30px;
     height: 30px;
 }
