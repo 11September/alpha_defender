@@ -3,7 +3,9 @@
         <div class="container">
             <div class="row footer-wrapper">
                 <div class="col-md-3 col-sm-6 col-12">
-                    <img class="footer-image" src="{{ asset('images/LOGO_small.png') }}" alt="">
+                    <a href="{{ url('/') }}">
+                        <img class="footer-image" src="{{ asset('images/LOGO_small.png') }}" alt="">
+                    </a>
                 </div>
                 <div class="col-md-6 col-sm-6 col-12">
                     <div class="wrrapper-description">
