@@ -199,7 +199,7 @@
                         <input type="text" placeholder="Як до вас звертатися?">
                         <input type="text" placeholder="Номер телефону, або e-mail  для зворотнього зв’язку ...">
                         <textarea rows="5" placeholder="Текст повідомлення  ..."></textarea>
-                        <input type="submit" value="Відправити" class="btn-submit">
+                        <input type="submit" value="Відправити" class="btn-submit hover-button-submit">
                     </form>
                 </div>
             </div>
