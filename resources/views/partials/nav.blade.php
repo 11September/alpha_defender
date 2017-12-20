@@ -137,10 +137,18 @@
             </li>
             <li class="menu-list__item third"><a data-toggle="modal" data-target="#myModal" href="#reviews">ЗАМОВИТИ
                     ЗАРАЗ</a></li>
-            <li class="menu-list__item"><a href="">ІНКАСАЦІЯ ЮРИДИЧНИХ ОСІБ</a></li>
-            <li class="menu-list__item"><a href="">ІНКАСАЦІЯ ФІЗИЧНИХ ОСІБ</a></li>
-            <li class="menu-list__item"><a href="">ІНКАСАЦІЯ БАНКІВ</a></li>
-            <li class="menu-list__item"><a href="">ОХОРОННА ДІЯЛЬНІСТЬ</a></li>
+            <li class="menu-list__item {{ Request::is('page-inkasaciya-yuridichnih-osib') ? 'active' : '' }}">
+                <a class="{{ Request::is('page-inkasaciya-yuridichnih-osib') ? 'active' : '' }}" href="{{ url('page-inkasaciya-yuridichnih-osib') }}">ІНКАСАЦІЯ ЮРИДИЧНИХ ОСІБ</a>
+            </li>
+            <li class="menu-list__item {{ Request::is('page-inkasaciya-fizichnih-osib') ? 'active' : '' }}">
+                <a class="{{ Request::is('page-inkasaciya-fizichnih-osib') ? 'active' : '' }}" href="{{ url('page-inkasaciya-fizichnih-osib') }}">ІНКАСАЦІЯ ФІЗИЧНИХ ОСІБ</a>
+            </li>
+            <li class="menu-list__item {{ Request::is('page-inkasaciya-bankiv') ? 'active' : '' }}">
+                <a class="{{ Request::is('page-inkasaciya-bankiv') ? 'active' : '' }}" href="{{ url('page-inkasaciya-bankiv') }}">ІНКАСАЦІЯ БАНКІВ</a>
+            </li>
+            <li class="menu-list__item {{ Request::is('page-ohoronna-diyal-nist') ? 'active' : '' }}">
+                <a class="{{ Request::is('page-ohoronna-diyal-nist') ? 'active' : '' }}" href="{{ url('page-ohoronna-diyal-nist') }}">ОХОРОННА ДІЯЛЬНІСТЬ</a>
+            </li>
         </ul>
     </nav>
 </div>
