@@ -154,12 +154,12 @@ return [
 //                'classes'    => 'class-full-of-rum',
 //                'icon_class' => 'voyager-person',
 //            ],
-            'Home' => [
+            'Перейти до сайту' => [
                 'route' => '/',
                 'icon_class' => 'voyager-home',
                 'target_blank' => true,
             ],
-            'Logout' => [
+            'Вийти' => [
                 'route' => 'voyager.logout',
                 'icon_class' => 'voyager-power',
             ],

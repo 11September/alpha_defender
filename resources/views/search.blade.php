@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <div id="news">
+    <div id="news margin">
         <div class="container">
 
             @if(count($posts) == 0 )
@@ -14,9 +14,9 @@
                     <div class="row">
                         <div class="col-md-12">
 
-                            <h4>Ничего не найдено</h4>
+                            <h4>Нічого не знайдено</h4>
 
-                            <p>Извините по вашему запросу ничего не найдено. Попробуйте другие ключевые слова.</p>
+                            <p>Вибачте за вашим запитом нічого не знайдено. Спробуйте інші ключові слова.</p>
 
                             <form id="search-form" method="post" action="{{ action('PostsController@search') }}">
                                 {{ csrf_field() }}
