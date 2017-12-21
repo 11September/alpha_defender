@@ -191,8 +191,8 @@ a {
 }
 
 .all-news {
-    width: 150px;
-    height: 36px;
+    width: 170px;
+    height: 45px;
     background-color: #ebe31b;
     margin: 0 auto;
 }
@@ -207,9 +207,17 @@ a {
 }
 
 .all-news a {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
     color: #195750;
+}
+
+.all-news:hover{
+    background-color: #376c63;
+}
+
+.all-news:hover a{
+    color: #ebe31b;
 }
 
 .container-margin {
@@ -471,6 +479,18 @@ a {
 }
 
 @media screen and (max-width: 576px) {
+    .modal.show .modal-dialog{
+        max-width: 90% !important;
+    }
+
+    .modal-body .left-part, .modal-body .right-part{
+        width: 90% !important;
+    }
+
+    .modal-body{
+        padding: 10px 0 30px 0;
+    }
+
     .incasacia h2{
         text-align: center;
     }
@@ -491,6 +511,32 @@ a {
 
     .incasacia-3 ul {
         list-style-type: none;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #form{
+        margin: 60px 0 40px 0 !important;
+    }
+
+    .about-intro{
+        margin-bottom: 30px !important;
+    }
+
+    .wrapper-about-top{
+        margin-bottom: 0 !important;
+    }
+
+    .wrapper-form-right-text-block{
+        padding-top: 0 !important;
+    }
+
+    .contact-siluet{
+        display: none;
+    }
+
+    .wrapper-form-right-text{
+        padding-left: 0 !important;
         text-align: center;
     }
 }
@@ -681,6 +727,10 @@ a {
     font-size: 20px;
     line-height: 25px;
     color: #ffffff;
+}
+
+.incasacia-2{
+    margin-left: 10%;
 }
 
 .incasacia-2 li span {
@@ -1007,7 +1057,7 @@ a {
 /* news page */
 #top-news {
     margin-top: -30px;
-    padding-bottom: 90px;
+    padding-bottom: 40px;
     -webkit-box-shadow: 1px 17px 45px -4px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 1px 17px 45px -4px rgba(0, 0, 0, 0.75);
     box-shadow: 1px 17px 45px -4px rgba(0, 0, 0, 0.75);
@@ -1039,7 +1089,7 @@ a {
 #news {
     padding: 10px 0;
     background-color: #dcdcdc;
-    position: relative;
+    /*position: relative;*/
     z-index: -1;
 }
 
@@ -1074,7 +1124,7 @@ a {
 
 .view-more:hover {
     text-decoration: none;
-    color: #2b857d;
+    color: #33a097;
 }
 
 .wrapper-post-additional {
@@ -1349,15 +1399,37 @@ textarea, input {
     padding: 0;
 }
 
+.hover-button-submit{
+    background-color: #195750;
+    border-color: #1f716a;
+    color: #ffffff;
+}
+
+.hover-button-submit:hover{
+    cursor: pointer;
+    background-color: yellow;
+    border-color: #195750;
+    outline: none;
+    color: #195750;
+}
+
 .submit-btn {
     margin-top: 15px;
-    background-color: rgb(149, 149, 149);
-    border-color: #868686;
+    background-color: #195750;
+    border-color: #1f716a;
     border-radius: 0;
     color: #ffffff;
     height: 55px;
     padding: 0 50px;
     font-size: 24px;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+    background-color: yellow;
+    border-color: #195750;
+    outline: none;
+    color: #195750;
 }
 
 .wrapper-form-right-text-block {
@@ -1442,7 +1514,7 @@ textarea, input {
     .wrapper-submit-button {
         width: 100%;
         text-align: center;
-        margin-bottom: 90px;
+        margin-bottom: 30px;
     }
 
     #search-form .form-group {
@@ -1882,6 +1954,20 @@ button:focus {
     color: #777474;
 }
 
+.modal-body input.hover-button-submit{
+    background-color: #195750;
+    border-color: #1f716a;
+    color: #ffffff;
+}
+
+.modal-body input.hover-button-submit:hover{
+    cursor: pointer;
+    background-color: yellow;
+    outline: none;
+    color: #195750;
+}
+
+
 .modal-body input, .modal-body textarea {
     display: block;
     padding-bottom: 10px;
@@ -1900,7 +1986,7 @@ button:focus {
     padding-bottom: 12px !important;
     text-transform: uppercase;
     color: white;
-    background: #959595 !important;
+    /*background: #959595 !important;*/
 }
 
 .right-part {
@@ -1983,9 +2069,9 @@ button:focus {
 }
 
 .ico-two {
-    margin: 40px 30px;
-    width: 30px;
-    height: 30px;
+    margin: 15px 25px;
+    width: 40px;
+    height: 40px;
 }
 
 .hider {

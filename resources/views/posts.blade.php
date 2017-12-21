@@ -17,7 +17,7 @@
 
                     <div class="col-md-12">
                         <a href="{{ action('PostsController@show', $featured->id) }}">
-                            <img class="main-news-image" src="{{ asset('storage/' . $featured->image) }}"
+                            <img class="main-news-image image-effect" src="{{ asset('storage/' . $featured->image) }}"
                                  alt="{{ $featured->title }}">
                         </a>
                     </div>
