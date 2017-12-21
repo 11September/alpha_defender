@@ -1424,7 +1424,7 @@ textarea, input {
     font-size: 24px;
 }
 
-.submit-btn:hover{
+.wrapper-submit-button .submit-btn:hover{
     cursor: pointer;
     background-color: yellow;
     border-color: #195750;
@@ -1893,6 +1893,11 @@ button:focus {
 
 .modal-body form {
     display: block;
+}
+
+.modal-body .btn-submit{
+    background-color: #195750;
+    border-color: #1f716a;
 }
 
 .modal-body .left-part,
