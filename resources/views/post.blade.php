@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <div id="one-post">
+    <div id="one-post" class="margin-one-post">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">

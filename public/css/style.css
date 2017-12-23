@@ -57,6 +57,10 @@ a {
     filter: grayscale(40%);
 }
 
+.margin-one-post{
+    margin-top: 50px;
+}
+
 .nopad {
     padding: 0;
 }
@@ -1213,6 +1217,7 @@ a {
 .wrapper-content-one-post {
     max-width: 100%;
     overflow: hidden;
+    padding: 30px 0;
 }
 
 .previous-next {
@@ -1228,7 +1233,15 @@ a {
     vertical-align: text-bottom;
 }
 
+.page-news #news{
+    position: unset;
+}
+
 @media screen and (max-width: 768px) {
+    .wrapper-one-post-additional{
+        margin: 35px 0 35px 0 !important;
+    }
+
     .wrapper-one-post-additional p {
         text-align: center;
         float: none;
@@ -1411,7 +1424,7 @@ textarea, input {
     font-size: 24px;
 }
 
-.submit-btn:hover{
+.wrapper-submit-button .submit-btn:hover{
     cursor: pointer;
     background-color: yellow;
     border-color: #195750;
@@ -1880,6 +1893,11 @@ button:focus {
 
 .modal-body form {
     display: block;
+}
+
+.modal-body .btn-submit{
+    background-color: #195750;
+    border-color: #1f716a;
 }
 
 .modal-body .left-part,

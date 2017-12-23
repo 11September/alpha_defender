@@ -38,6 +38,6 @@ class PostsController extends Controller
             ->orWhere('body', 'like' , "$searchQuery%")
             ->where('status', '=', "PUBLISHED")->paginate(5);
 
-        return view('search', compact('posts'));
+        return view('search', compact('posts', 'searchQuery'));
     }
 }
