@@ -1370,9 +1370,9 @@ a {
     height: 60px;
 }
 
-#contact-form .form-group:nth-child(3) {
-    height: 230px;
-}
+/*#contact-form .form-group:nth-child(2) {*/
+    /*height: 230px;*/
+/*}*/
 
 #contact-form .form-group textarea {
     height: inherit;

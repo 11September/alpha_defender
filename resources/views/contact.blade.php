@@ -58,25 +58,29 @@
                         <h2 class="title"><span class="num-block"></span>ЗАЛИШИТИ ПОВІДОМЛЕННЯ</h2>
                     </div>
 
-                    <form id="contact-form">
+                    <form method="post" action="{{ action('WelcomeController@sendEmail') }}" id="contact-form">
+                        {{ csrf_field() }}
+
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Як до Вас звертатись? ...">
+                            <input value="{{ old('name') }}" name="name" type="text" required="required" class="form-control" placeholder="Як до Вас звертатись? ...">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="e-mail,  для зворотнього зв’язку ...">
+                            <input value="{{ old('email') }}" name="email" type="email" required="required" class="form-control" placeholder="e-mail,  для зворотнього зв’язку ...">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" rows="8"
-                                      placeholder="Ввідить текст свого повідомлення, не більше 1000 знаків..."></textarea>
+                            <textarea name="message" class="form-control" rows="8" required="required"
+                                      placeholder="Ввідить текст свого повідомлення, не більше 1000 знаків...">{{ old('message') }}</textarea>
                         </div>
 
                         <div class="form-group">
-                            {{--{!! NoCaptcha::display(['data-theme' => 'dark']) !!}--}}
+                            {!! NoCaptcha::display(['data-theme' => 'light']) !!}
                         </div>
 
                         <div class="col-md-12 wrapper-submit-button">
                             <button type="submit" class="btn btn-primary submit-btn">ВІДПРАВИТИ</button>
                         </div>
+
+                        @include('errors.listErrors')
 
                     </form>
                 </div>

@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Validator;
 use App\Post;
 use App\Person;
+
 use Illuminate\Http\Request;
 
 class WelcomeController extends Controller
@@ -24,7 +26,7 @@ class WelcomeController extends Controller
 
     public function sendEmail(Request $request)
     {
-        $validator = Validator::make($request->all(), [
+        $validator = Validator::make($request->all(),[
             'name' => 'required|min:3',
             'email' => 'required|email',
             'message' => 'required|min:5',
