@@ -1414,6 +1414,7 @@ textarea, input {
 }
 
 .submit-btn {
+    width:100%;
     margin-top: 15px;
     background-color: #195750;
     border-color: #1f716a;
