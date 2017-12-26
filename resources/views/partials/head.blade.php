@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="{{ asset('favicon.ico') }}" sizes="16x16" type="image/png">
+<link rel="icon" href="{{ asset('favicon.ico') }}">
 
 <title>{{ setting('site.title') }}</title>
 <meta name="description" content="{{ setting('site.description') }}">

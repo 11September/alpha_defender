@@ -13,7 +13,7 @@ class WelcomeController extends Controller
     public function index()
     {
         $posts = Post::where('status', '=', "PUBLISHED")->take(3)->latest()->orderBy('id', 'desc')->get();
-
+        
         return view('welcome', compact('posts'));
     }
 

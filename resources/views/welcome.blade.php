@@ -32,16 +32,16 @@
                                         {{ \Carbon\Carbon::parse($post->created_at)->format('d.m.Y')}}
                                     </h3>
                                     <p>
-                                        @if($post->excerpt)
+                                        @if(isset($post->excerpt))
                                             @php
-                                                $body = strip_tags($post->excerpt); $body = substr($body,0,130);
+                                                $post->excerpt = mb_strimwidth($post->excerpt,0,140);
                                             @endphp
-                                            {{ $body . " ..." }}
+                                            {{ $post->excerpt . " ..." }}
                                         @else
                                             @php
-                                                $body = strip_tags($post->body); $body = substr($body,0,130);
+                                                $post->body = mb_strimwidth($post->body,0,140);
                                             @endphp
-                                            {{ $body . " ..." }}
+                                            {{ $post->body . " ..." }}
                                         @endif
                                     </p>
 
