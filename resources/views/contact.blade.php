@@ -38,9 +38,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p class="contact-intro-text">
-                            Запрошуємо Вас завітати до нашого головного офісу за адресою: Київська область, м.
-                            Бориспіль,
-                            вул. Запорізька, 14.</p>
+                            Запрошуємо Вас завітати до нашого головного офісу за адресою: м.Київ, Академика Лебедева 1, корпус 7, приміщення 175</p>
                     </div>
                 </div>
             </div>
@@ -48,7 +46,7 @@
     </div>
 
     <div id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24206.544774772516!2d30.915917508654296!3d50.37774914839995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4e7d36ff5c8e7%3A0x74d6d66fe0836423!2z0LLRg9C70LjRhtGPINCX0LDQv9C-0YDRltC30YzQutCwLCAxNCwg0JHQvtGA0LjRgdC_0ZbQu9GMLCDQmtC40ZfQstGB0YzQutCwINC-0LHQuy4sIDA4MzAx!5e0!3m2!1sru!2sua!4v1514312225288"
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7200.910317393887!2d30.483450300479312!3d50.349653794238755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8776f790381%3A0x368b7728d4206d20!2z0YPQuy4g0JDQutCw0LTQtdC80LjQutCwINCb0LXQsdC10LTQtdCy0LAsIDEsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1514404708841"
                 height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
