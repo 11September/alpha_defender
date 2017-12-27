@@ -1105,7 +1105,7 @@ a {
 }
 
 .post-item-description {
-    height: 120px;
+    height: 100px;
     overflow: hidden;
 }
 
@@ -1500,6 +1500,14 @@ textarea, input {
 
     .contact-intro-text {
         text-align: center;
+    }
+
+    .wrapper-item-description{
+        padding: 10px 30px;
+    }
+
+    .post-item-title{
+        margin: 0 0 10px;
     }
 }
 
